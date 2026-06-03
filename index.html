@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sketch Gallery — Reema</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:        #080b12;
+  --bg2:       #0d1120;
+  --surface:   #111827;
+  --surface2:  #1a2235;
+  --surface3:  #212e45;
+  --border:    rgba(148,163,184,0.10);
+  --border2:   rgba(148,163,184,0.22);
+  --border3:   rgba(148,163,184,0.38);
+  --text1:     #f0f4ff;
+  --text2:     #94a3b8;
+  --text3:     #475569;
+  --accent:    #7eb8f7;
+  --accent-d:  #3b82f6;
+  --accent-bg: rgba(126,184,247,0.08);
+  --gold:      #f0c060;
+  --gold-bg:   rgba(240,192,96,0.08);
+  --green:     #6ee7b7;
+  --green-bg:  rgba(110,231,183,0.08);
+  --red:       #fca5a5;
+  --red-bg:    rgba(252,165,165,0.08);
+  --purple:    #c4b5fd;
+  --purple-bg: rgba(196,181,253,0.08);
+  --teal:      #67e8f9;
+  --teal-bg:   rgba(103,232,249,0.08);
+  --radius:    14px;
+  --glow:      rgba(126,184,247,0.15);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text1);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+/* mesh bg */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 10% 0%, rgba(126,184,247,0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 100%, rgba(196,181,253,0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── NAVBAR ── */
+nav {
+  background: rgba(8,11,18,0.85);
+  border-bottom: 1px solid var(--border2);
+  padding: 13px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(16px);
+}
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-brand span { font-size: 20px; }
+
+.nav-actions { display: flex; gap: 8px; align-items: center; }
+
+.btn-sm {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 11px;
+  font-family: 'Space Mono', monospace;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all .18s;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+.btn-sm:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+.btn-sm.active { background: var(--accent-d); color: #fff; border-color: var(--accent-d); }
+
+/* ── HEADER ── */
+header {
+  position: relative;
+  z-index: 1;
+  padding: 56px 28px 40px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(126,184,247,0.04) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 400;
+  color: var(--text1);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+h1 em { font-style: italic; color: var(--accent); }
+
+.header-sub {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--text3);
+  letter-spacing: .12em;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stat-chip {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--text2);
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 5px 14px;
+  letter-spacing: .04em;
+}
+.stat-chip strong { color: var(--accent); }
+
+/* ── MAIN ── */
+.wrap {
+  max-width: 1100px;
+  margin: 28px auto 0;
+  padding: 0 18px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── SUBJECT ── */
+.subject {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 12px;
+  border-top: 3px solid var(--accent-d);
+  transition: border-color .2s, box-shadow .2s;
+  animation: fadeUp .35s ease both;
+}
+.subject:hover { border-color: var(--border2); box-shadow: 0 4px 32px rgba(0,0,0,.3); }
+@keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+
+.subject-hdr {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 22px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.subject-icon-wrap {
+  width: 40px; height: 40px;
+  background: var(--surface2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.subject-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  flex: 1;
+  color: var(--text1);
+}
+
+.subject-cnt {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border2);
+  background: var(--surface2);
+  white-space: nowrap;
+  color: var(--accent);
+  letter-spacing: .06em;
+}
+
+.chev {
+  color: var(--text3);
+  transition: transform .25s;
+  flex-shrink: 0;
+}
+.subject.open .chev { transform: rotate(180deg); }
+
+.subject-body { display: none; border-top: 1px solid var(--border); }
+.subject.open .subject-body { display: block; }
+
+/* ── TOPIC ── */
+.topic {
+  padding: 14px 22px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.topic:last-of-type { border-bottom: none; }
+
+.topic-hdr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.topic-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  opacity: .5;
+}
+
+.topic-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text1);
+  flex: 1;
+  letter-spacing: .01em;
+}
+
+.topic-cnt {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: .06em;
+}
+
+.topic-toggle { color: var(--text3); transition: transform .2s; flex-shrink: 0; }
+.topic.open .topic-toggle { transform: rotate(180deg); }
+
+.topic-grid { display: none; }
+.topic.open .topic-grid { display: block; }
+
+/* ── IMAGE GRID ── */
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 640px) { .img-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── CARD ── */
+.card {
+  position: relative;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .18s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,.5);
+  border-color: var(--border2);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+  background: var(--surface2);
+}
+
+.card-name {
+  flex: 1;
+  font-size: 10px;
+  color: var(--text2);
+  line-height: 1.4;
+  letter-spacing: .02em;
+}
+
+.note-btn {
+  background: none;
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  font-size: 11px;
+  padding: 2px 7px;
+  cursor: pointer;
+  color: var(--text3);
+  font-family: 'Space Mono', monospace;
+  transition: all .15s;
+  flex-shrink: 0;
+  line-height: 1.6;
+}
+.note-btn:hover { border-color: var(--gold); color: var(--gold); }
+.note-btn.has { border-color: var(--gold); color: var(--gold); background: var(--gold-bg); }
+
+/* Select badge */
+.sel-badge {
+  display: none;
+  position: absolute;
+  top: 7px; left: 7px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,.4);
+  z-index: 2;
+}
+body.compare-mode .sel-badge { display: flex; }
+.card.selected { outline: 2.5px solid var(--accent-d); outline-offset: 2px; box-shadow: 0 0 0 4px rgba(59,130,246,.25); }
+.card.selected .sel-badge { background: var(--accent-d); color: #fff; }
+
+/* Delete btn */
+.card-del {
+  display: none;
+  position: absolute;
+  top: 6px; right: 6px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(220,38,38,.85);
+  border: none;
+  color: #fff;
+  font-size: 11px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  line-height: 1;
+  transition: transform .15s;
+}
+body.edit-mode .card-del { display: flex; }
+.card-del:hover { transform: scale(1.15); }
+
+/* ── NOTE PANEL ── */
+.note-panel { display: none; border-top: 1px solid var(--border); background: var(--surface3); }
+.note-panel.open { display: block; }
+.note-panel textarea {
+  width: 100%;
+  min-height: 60px;
+  resize: vertical;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--text1);
+  outline: none;
+  line-height: 1.6;
+}
+.note-panel textarea::placeholder { color: var(--text3); }
+.note-save-btn {
+  margin: 6px 10px 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  color: var(--accent);
+  padding: 3px 10px;
+  cursor: pointer;
+  letter-spacing: .04em;
+  transition: opacity .15s;
+}
+.note-save-btn:hover { opacity: .8; }
+
+/* ── DROP ZONE ── */
+.drop-zone {
+  display: none;
+  border: 1.5px dashed var(--border2);
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+  margin-top: 6px;
+  position: relative;
+}
+body.edit-mode .drop-zone { display: block; }
+.drop-zone:hover, .drop-zone.drag-over {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+.drop-zone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.drop-zone-inner { pointer-events: none; }
+.drop-zone-icon { font-size: 22px; margin-bottom: 5px; }
+.drop-zone-text { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text3); letter-spacing: .06em; }
+
+/* ── ADD TOPIC ── */
+.add-topic-wrap { display: none; padding: 12px 22px; border-top: 1px solid var(--border); background: var(--surface2); }
+body.edit-mode .add-topic-wrap { display: block; }
+.add-topic-form { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.add-topic-form input {
+  background: var(--surface3);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--text1);
+  outline: none;
+  flex: 1;
+  min-width: 130px;
+  transition: border-color .2s;
+}
+.add-topic-form input:focus { border-color: var(--accent); }
+.add-topic-form input::placeholder { color: var(--text3); }
+.btn-add-topic {
+  background: var(--accent-d);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 15px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity .15s;
+  letter-spacing: .04em;
+}
+.btn-add-topic:hover { opacity: .85; }
+
+/* Delete btns */
+.del-subject-btn, .del-topic-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text3);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  transition: color .15s;
+  flex-shrink: 0;
+}
+body.edit-mode .del-subject-btn, body.edit-mode .del-topic-btn { display: inline-block; }
+.del-subject-btn:hover, .del-topic-btn:hover { color: var(--red); }
+
+/* ── ADD SUBJECT ── */
+#addSubjectWrap { display: none; margin-top: 14px; }
+body.edit-mode #addSubjectWrap { display: block; }
+.btn-add-subject {
+  width: 100%;
+  background: transparent;
+  border: 1.5px dashed var(--border2);
+  border-radius: var(--radius);
+  padding: 15px;
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .08em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background .15s, border-color .15s;
+}
+.btn-add-subject:hover { background: var(--accent-bg); border-color: var(--accent); }
+
+/* ── EMPTY STATE ── */
+.empty-state {
+  text-align: center;
+  padding: 28px 16px;
+  color: var(--text3);
+  font-size: 12px;
+  border: 1.5px dashed var(--border2);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: .04em;
+}
+.empty-icon { font-size: 26px; margin-bottom: 8px; }
+
+/* ── LIGHTBOX ── */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(4,6,10,0.97);
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 96vw;
+  max-height: 78vh;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 24px 64px rgba(0,0,0,.8);
+}
+.lb-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(255,255,255,.4);
+  letter-spacing: .08em;
+  text-align: center;
+}
+.lb-close {
+  position: absolute;
+  top: 16px; right: 20px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 8px;
+  color: rgba(255,255,255,.7);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.lb-close:hover { background: rgba(255,255,255,.14); }
+.lb-nav { display: flex; gap: 10px; align-items: center; }
+.lb-btn {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 8px;
+  color: rgba(255,255,255,.7);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.lb-btn:hover { background: rgba(255,255,255,.14); }
+.lb-ctr {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(255,255,255,.3);
+  min-width: 60px;
+  text-align: center;
+}
+
+/* ── COMPARE LIGHTBOX ── */
+.compare-lb {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(4,6,10,0.97);
+  z-index: 1000;
+  flex-direction: column;
+  padding: 16px;
+}
+.compare-lb.open { display: flex; }
+.compare-hdr { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-shrink: 0; }
+.compare-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: rgba(255,255,255,.5);
+  flex: 1;
+  font-style: italic;
+}
+.compare-grid { display: grid; gap: 10px; flex: 1; min-height: 0; }
+.compare-grid.n1 { grid-template-columns: 1fr; }
+.compare-grid.n2 { grid-template-columns: 1fr 1fr; }
+.compare-grid.n3 { grid-template-columns: 1fr 1fr 1fr; }
+.compare-grid.n4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.compare-cell { display: flex; flex-direction: column; gap: 6px; min-height: 0; overflow: hidden; }
+.compare-cell img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+.compare-cell-lbl {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,.35);
+  letter-spacing: .06em;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ── COMPARE BAR ── */
+.compare-bar {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13,17,32,0.95);
+  border: 1px solid var(--border2);
+  border-radius: 40px;
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 200;
+  box-shadow: 0 8px 40px rgba(0,0,0,.6);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--text1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all .25s;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+}
+.compare-bar.show { opacity: 1; pointer-events: all; }
+.cbar-cnt { color: var(--text2); font-size: 11px; }
+.cbar-cnt strong { color: var(--text1); }
+.cbar-go {
+  background: var(--accent-d);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.cbar-go:hover { opacity: .85; }
+.cbar-go:disabled { background: var(--surface3); color: var(--text3); cursor: not-allowed; }
+.cbar-clr {
+  background: none;
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  color: var(--text2);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: color .15s;
+}
+.cbar-clr:hover { color: var(--text1); border-color: var(--border3); }
+
+/* ── PASTE HINT ── */
+#pasteHint {
+  position: fixed;
+  bottom: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-d);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+  white-space: nowrap;
+  z-index: 300;
+  letter-spacing: .04em;
+}
+#pasteHint.show { opacity: 1; }
+
+/* ── MODALS ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  z-index: 500;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 18px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 24px 64px rgba(0,0,0,.6);
+}
+.modal h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  color: var(--text1);
+}
+.modal input, .modal select {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--text1);
+  outline: none;
+  margin-bottom: 10px;
+  transition: border-color .2s;
+}
+.modal input:focus, .modal select:focus { border-color: var(--accent); }
+.modal input::placeholder { color: var(--text3); }
+.modal select { color: var(--text2); cursor: pointer; }
+.modal select option { background: var(--surface2); color: var(--text1); }
+.modal-btns { display: flex; gap: 10px; margin-top: 4px; }
+.btn-confirm {
+  flex: 1;
+  background: var(--accent-d);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity .15s;
+  letter-spacing: .04em;
+}
+.btn-confirm:hover { opacity: .85; }
+.btn-cancel {
+  flex: 1;
+  background: transparent;
+  color: var(--text2);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 11px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+.btn-cancel:hover { border-color: var(--border3); }
+
+/* PW modal */
+.pw-modal {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 18px;
+  padding: 30px;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0,0,0,.6);
+}
+.pw-modal .lock { font-size: 2rem; margin-bottom: 10px; }
+.pw-modal h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 6px; color: var(--text1); }
+.pw-modal p { color: var(--text3); font-size: 12px; margin-bottom: 18px; font-family: 'Space Mono', monospace; }
+.pw-modal input {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--text1);
+  outline: none;
+  margin-bottom: 8px;
+  text-align: center;
+  transition: border-color .2s;
+}
+.pw-modal input:focus { border-color: var(--accent); }
+.pw-error { color: var(--red); font-family: 'Space Mono', monospace; font-size: 11px; margin-bottom: 8px; display: none; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-brand"><span>🎨</span> Sketch Gallery · Reema</div>
+  <div class="nav-actions">
+    <button class="btn-sm" id="compareBtn" onclick="toggleCompareMode()">⊞ Compare</button>
+    <button class="btn-sm" id="editBtn" onclick="onEditClick()">✏️ Edit</button>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>Sketch <em>Gallery</em></h1>
+  <p class="header-sub">Stage א · Internal Medicine · Reema</p>
+  <div class="stats-row">
+    <div class="stat-chip"><strong id="totalImages">0</strong> scenes</div>
+    <div class="stat-chip"><strong id="totalSubjects">0</strong> subjects</div>
+    <div class="stat-chip"><strong id="totalTopics">0</strong> topics</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="wrap" id="mainWrap"></div>
+<div class="wrap" id="addSubjectWrap">
+  <button class="btn-add-subject" onclick="openAddSubjectModal()">
+    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    Add New Subject
+  </button>
+</div>
+
+<!-- COMPARE BAR -->
+<div class="compare-bar" id="compareBar">
+  <span class="cbar-cnt">Selected: <strong id="selCount">0</strong></span>
+  <button class="cbar-go" id="compareGoBtn" onclick="openCompare()" disabled>Compare</button>
+  <button class="cbar-clr" onclick="clearSelection()">Clear</button>
+</div>
+
+<!-- PASTE HINT -->
+<div id="pasteHint">📋 Image pasted!</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">✕ Close</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-label" id="lbLabel"></div>
+  <div class="lb-nav">
+    <button class="lb-btn" onclick="lbPrev(event)">← Prev</button>
+    <span class="lb-ctr" id="lbCtr"></span>
+    <button class="lb-btn" onclick="lbNext(event)">Next →</button>
+  </div>
+</div>
+
+<!-- COMPARE LIGHTBOX -->
+<div class="compare-lb" id="compareLb">
+  <div class="compare-hdr">
+    <span class="compare-title">Compare Mode</span>
+    <button class="btn-sm" onclick="closeCompare()">✕ Close</button>
+  </div>
+  <div class="compare-grid" id="compareGrid"></div>
+</div>
+
+<!-- PASSWORD MODAL -->
+<div class="modal-overlay" id="pwModal">
+  <div class="pw-modal">
+    <div class="lock">🔒</div>
+    <h3>Edit Mode</h3>
+    <p>Enter your password to unlock.</p>
+    <input type="password" id="pwInput" placeholder="Password..." onkeydown="if(event.key==='Enter')checkPw()">
+    <p class="pw-error" id="pwError">Incorrect password.</p>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closePwModal()">Cancel</button>
+      <button class="btn-confirm" onclick="checkPw()">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADD SUBJECT MODAL -->
+<div class="modal-overlay" id="addSubjectModal">
+  <div class="modal">
+    <h3>New Subject</h3>
+    <input type="text" id="newSubjectName" placeholder="Subject name (e.g. Cardiology)" onkeydown="if(event.key==='Enter')document.getElementById('newSubjectIcon').focus()">
+    <input type="text" id="newSubjectIcon" placeholder="Emoji icon (e.g. ❤️)" onkeydown="if(event.key==='Enter')confirmAddSubject()">
+    <select id="newSubjectColor">
+      <option value="#3b82f6">Blue</option>
+      <option value="#ef4444">Red</option>
+      <option value="#10b981">Green</option>
+      <option value="#f59e0b">Gold</option>
+      <option value="#8b5cf6">Purple</option>
+      <option value="#06b6d4">Teal</option>
+    </select>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal('addSubjectModal')">Cancel</button>
+      <button class="btn-confirm" onclick="confirmAddSubject()">Add Subject</button>
+    </div>
+  </div>
+</div>
+
+<!-- NAME IMAGE MODAL -->
+<div class="modal-overlay" id="nameImgModal">
+  <div class="modal">
+    <h3>Name this scene</h3>
+    <input type="text" id="imgNameInput" placeholder="Scene name (optional)" onkeydown="if(event.key==='Enter')confirmNameImg()">
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="confirmNameImg()">Skip</button>
+      <button class="btn-confirm" onclick="confirmNameImg()">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DB_NAME = 'ReemaSketchGalleryV2';
+const DB_VER = 1;
+let db;
+
+function openDB() {
+  return new Promise((res, rej) => {
+    const req = indexedDB.open(DB_NAME, DB_VER);
+    req.onupgradeneeded = e => {
+      const d = e.target.result;
+      if (!d.objectStoreNames.contains('meta')) d.createObjectStore('meta', { keyPath: 'id' });
+    };
+    req.onsuccess = e => { db = e.target.result; res(db); };
+    req.onerror = () => rej(req.error);
+  });
+}
+
+function dbGet(store, key) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(store, 'readonly');
+    const req = tx.objectStore(store).get(key);
+    req.onsuccess = () => res(req.result);
+    req.onerror = () => rej(req.error);
+  });
+}
+
+function dbPut(store, val) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(store, 'readwrite');
+    const req = tx.objectStore(store).put(val);
+    req.onsuccess = () => res();
+    req.onerror = () => rej(req.error);
+  });
+}
+
+// STATE
+const PASS = 'reema2026';
+let editMode = false;
+let compareMode = false;
+let selectedCards = [];
+let subjects = [];
+let openSubjects = new Set();
+let openTopics = new Set();
+let lbImages = [];
+let lbIdx = 0;
+let pendingImgData = null;
+
+async function init() {
+  await openDB();
+  const meta = await dbGet('meta', 'subjects');
+  subjects = meta ? meta.data : [];
+  render();
+  setupPaste();
+}
+
+async function saveMeta() {
+  await dbPut('meta', { id: 'subjects', data: subjects });
+}
+
+// RENDER
+function render() {
+  const wrap = document.getElementById('mainWrap');
+  wrap.innerHTML = '';
+  let totalImages = 0, totalTopics = 0;
+
+  subjects.forEach((subj, si) => {
+    totalTopics += subj.topics.length;
+    subj.topics.forEach(t => totalImages += t.images.length);
+    const isOpen = openSubjects.has(subj.id);
+    const el = document.createElement('div');
+    el.className = `subject${isOpen ? ' open' : ''}`;
+    el.style.cssText = `border-top-color: ${subj.color || '#3b82f6'}; animation-delay: ${si * 0.05}s`;
+
+    el.innerHTML = `
+      <div class="subject-hdr" onclick="toggleSubject('${subj.id}',event)">
+        <div class="subject-icon-wrap">${subj.icon || '📚'}</div>
+        <span class="subject-title">${subj.name}</span>
+        <span class="subject-cnt" style="color:${subj.color||'#3b82f6'}">${subj.topics.length} TOPIC${subj.topics.length!==1?'S':''}</span>
+        <button class="del-subject-btn" onclick="deleteSubject('${subj.id}',event)">✕</button>
+        <svg class="chev" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="subject-body">
+        ${subj.topics.map(t => renderTopic(subj, t)).join('')}
+        <div class="add-topic-wrap">
+          <div class="add-topic-form">
+            <input type="text" id="ti_${subj.id}" placeholder="New topic name..." onkeydown="if(event.key==='Enter')addTopic('${subj.id}')">
+            <button class="btn-add-topic" onclick="addTopic('${subj.id}')">+ Add Topic</button>
+          </div>
+        </div>
+      </div>`;
+    wrap.appendChild(el);
+  });
+
+  document.getElementById('totalImages').textContent = totalImages;
+  document.getElementById('totalSubjects').textContent = subjects.length;
+  document.getElementById('totalTopics').textContent = totalTopics;
+}
+
+function renderTopic(subj, topic) {
+  const isOpen = openTopics.has(topic.id);
+  const imgs = topic.images || [];
+  const grid = imgs.length > 0
+    ? imgs.map(img => `
+      <div class="card${selectedCards.find(c=>c.src===img.src)?' selected':''}"
+           data-src="${img.src}" data-name="${(img.name||'').replace(/"/g,'&quot;')}"
+           onclick="cardClick(event,this,'${img.src}','${(img.name||'').replace(/'/g,"\\'")}')">
+        <span class="sel-badge">${(selectedCards.findIndex(c=>c.src===img.src)+1)||''}</span>
+        <button class="card-del" onclick="deleteImage('${subj.id}','${topic.id}','${img.id}',event)">✕</button>
+        <img src="${img.src}" alt="${img.name||'Scene'}" loading="lazy">
+        <div class="card-footer">
+          <span class="card-name">${img.name||'Untitled scene'}</span>
+          <button class="note-btn${img.note?' has':''}" id="nb_${img.id}" onclick="toggleNote('${img.id}',event)">📝</button>
+        </div>
+        <div class="note-panel${img.note?' open':''}" id="np_${img.id}">
+          <textarea id="nt_${img.id}" placeholder="Your notes..." oninput="saveNote('${subj.id}','${topic.id}','${img.id}',this.value)">${img.note||''}</textarea>
+          <button class="note-save-btn" onclick="saveNote('${subj.id}','${topic.id}','${img.id}',document.getElementById('nt_${img.id}').value)">Save note</button>
+        </div>
+      </div>`).join('')
+    : `<div class="empty-state"><div class="empty-icon">🎨</div><p>No scenes yet — drop images below</p></div>`;
+
+  return `
+    <div class="topic${isOpen?' open':''}" id="topic_${topic.id}">
+      <div class="topic-hdr" onclick="toggleTopic('${topic.id}',event)">
+        <div class="topic-dot"></div>
+        <span class="topic-name">${topic.name}</span>
+        <span class="topic-cnt">${imgs.length} SCENE${imgs.length!==1?'S':''}</span>
+        <button class="del-topic-btn" onclick="deleteTopic('${subj.id}','${topic.id}',event)">✕</button>
+        <svg class="topic-toggle" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="topic-grid">
+        <div class="img-grid">${grid}</div>
+        <div class="drop-zone" id="dz_${topic.id}"
+             ondragover="onDragOver(event,'${topic.id}')"
+             ondragleave="onDragLeave('${topic.id}')"
+             ondrop="onDrop(event,'${subj.id}','${topic.id}')">
+          <input type="file" accept="image/*" multiple onchange="onFileInput(event,'${subj.id}','${topic.id}')">
+          <div class="drop-zone-inner">
+            <div class="drop-zone-icon">🖼️</div>
+            <div class="drop-zone-text">Drop images here · Click to upload · Cmd+V to paste</div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+// TOGGLE
+function toggleSubject(id, e) {
+  if (e.target.closest('.del-subject-btn')) return;
+  openSubjects.has(id) ? openSubjects.delete(id) : openSubjects.add(id);
+  render();
+}
+function toggleTopic(id, e) {
+  if (e.target.closest('.del-topic-btn')) return;
+  openTopics.has(id) ? openTopics.delete(id) : openTopics.add(id);
+  render();
+}
+
+// ADD SUBJECT
+function openAddSubjectModal() {
+  document.getElementById('newSubjectName').value = '';
+  document.getElementById('newSubjectIcon').value = '';
+  document.getElementById('addSubjectModal').classList.add('open');
+  setTimeout(() => document.getElementById('newSubjectName').focus(), 100);
+}
+async function confirmAddSubject() {
+  const name = document.getElementById('newSubjectName').value.trim();
+  const icon = document.getElementById('newSubjectIcon').value.trim() || '📚';
+  const color = document.getElementById('newSubjectColor').value;
+  if (!name) { document.getElementById('newSubjectName').focus(); return; }
+  const id = 'subj_' + Date.now();
+  subjects.push({ id, name, icon, color, topics: [] });
+  openSubjects.add(id);
+  await saveMeta();
+  closeModal('addSubjectModal');
+  render();
+}
+
+// ADD TOPIC
+function addTopic(subjId) {
+  const input = document.getElementById('ti_' + subjId);
+  const name = input.value.trim();
+  if (!name) { input.focus(); return; }
+  const subj = subjects.find(s => s.id === subjId);
+  if (!subj) return;
+  const id = 'topic_' + Date.now();
+  subj.topics.push({ id, name, images: [] });
+  openTopics.add(id);
+  openSubjects.add(subjId);
+  saveMeta().then(() => render());
+}
+
+// IMAGE HANDLING
+function onDragOver(e, tid) { e.preventDefault(); document.getElementById('dz_'+tid).classList.add('drag-over'); }
+function onDragLeave(tid) { document.getElementById('dz_'+tid).classList.remove('drag-over'); }
+function onDrop(e, sid, tid) {
+  e.preventDefault();
+  document.getElementById('dz_'+tid).classList.remove('drag-over');
+  const files = [...e.dataTransfer.files].filter(f => f.type.startsWith('image/'));
+  if (files.length) processFiles(files, sid, tid);
+}
+function onFileInput(e, sid, tid) {
+  processFiles([...e.target.files], sid, tid);
+  e.target.value = '';
+}
+
+let pendingQueue = [];
+function processFiles(files, sid, tid) {
+  pendingQueue = files.slice(1).map(f => ({f, sid, tid}));
+  readOne(files[0], sid, tid);
+}
+function readOne(file, sid, tid) {
+  const reader = new FileReader();
+  reader.onload = ev => {
+    pendingImgData = { src: ev.target.result, sid, tid };
+    document.getElementById('imgNameInput').value = file.name.replace(/\.[^/.]+$/, '');
+    document.getElementById('nameImgModal').classList.add('open');
+    setTimeout(() => document.getElementById('imgNameInput').focus(), 100);
+  };
+  reader.readAsDataURL(file);
+}
+
+async function confirmNameImg() {
+  if (!pendingImgData) { closeModal('nameImgModal'); return; }
+  const name = document.getElementById('imgNameInput').value.trim() || 'Untitled scene';
+  const { src, sid, tid } = pendingImgData;
+  const id = 'img_' + Date.now() + '_' + Math.random().toString(36).slice(2,5);
+  const subj = subjects.find(s => s.id === sid);
+  const topic = subj?.topics.find(t => t.id === tid);
+  if (topic) {
+    topic.images.push({ id, src, name, note: '' });
+    openTopics.add(tid);
+    openSubjects.add(sid);
+    await saveMeta();
+    render();
+  }
+  pendingImgData = null;
+  closeModal('nameImgModal');
+  // process queue
+  if (pendingQueue.length) {
+    const next = pendingQueue.shift();
+    readOne(next.f, next.sid, next.tid);
+  }
+}
+
+// PASTE
+function setupPaste() {
+  document.addEventListener('paste', e => {
+    if (!editMode) return;
+    const imgItem = [...e.clipboardData.items].find(i => i.type.startsWith('image/'));
+    if (!imgItem) return;
+    let targetSid = null, targetTid = null;
+    outer: for (const subj of subjects) {
+      if (openSubjects.has(subj.id)) {
+        for (const topic of subj.topics) {
+          if (openTopics.has(topic.id)) {
+            targetSid = subj.id; targetTid = topic.id; break outer;
+          }
+        }
+      }
+    }
+    if (!targetTid) { showHint('⚠️ Open a topic first'); return; }
+    const file = imgItem.getAsFile();
+    readOne(file, targetSid, targetTid);
+    showHint('📋 Image pasted!');
+  });
+}
+
+function showHint(msg) {
+  const el = document.getElementById('pasteHint');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2200);
+}
+
+// DELETE
+async function deleteImage(sid, tid, imgId, e) {
+  e.stopPropagation();
+  if (!confirm('Delete this scene?')) return;
+  const topic = subjects.find(s=>s.id===sid)?.topics.find(t=>t.id===tid);
+  if (topic) { topic.images = topic.images.filter(i=>i.id!==imgId); await saveMeta(); render(); }
+}
+async function deleteTopic(sid, tid, e) {
+  e.stopPropagation();
+  const subj = subjects.find(s=>s.id===sid);
+  const t = subj?.topics.find(t=>t.id===tid);
+  if (!confirm(`Delete topic "${t?.name}"?`)) return;
+  subj.topics = subj.topics.filter(t=>t.id!==tid);
+  await saveMeta(); render();
+}
+async function deleteSubject(sid, e) {
+  e.stopPropagation();
+  const subj = subjects.find(s=>s.id===sid);
+  if (!confirm(`Delete subject "${subj?.name}" and all topics?`)) return;
+  subjects = subjects.filter(s=>s.id!==sid);
+  await saveMeta(); render();
+}
+
+// NOTES
+function toggleNote(imgId, e) {
+  e.stopPropagation();
+  document.getElementById('np_'+imgId)?.classList.toggle('open');
+  const btn = document.getElementById('nb_'+imgId);
+  if (btn) btn.classList.toggle('has', document.getElementById('np_'+imgId)?.classList.contains('open'));
+}
+async function saveNote(sid, tid, imgId, val) {
+  const img = subjects.find(s=>s.id===sid)?.topics.find(t=>t.id===tid)?.images.find(i=>i.id===imgId);
+  if (img) { img.note = val; await saveMeta(); document.getElementById('nb_'+imgId)?.classList.toggle('has', !!val); }
+}
+
+// LIGHTBOX
+function cardClick(e, card, src, name) {
+  if (e.target.closest('.card-del,.note-btn,.note-panel')) return;
+  if (compareMode) { toggleSelect(card, src, name); return; }
+  const cards = [...card.closest('.img-grid').querySelectorAll('.card')];
+  lbImages = cards.map(c => ({ src: c.dataset.src, name: c.dataset.name }));
+  lbIdx = cards.indexOf(card);
+  openLB();
+}
+function openLB() {
+  const img = lbImages[lbIdx];
+  document.getElementById('lbImg').src = img.src;
+  document.getElementById('lbLabel').textContent = img.name || '';
+  document.getElementById('lbCtr').textContent = `${lbIdx+1} / ${lbImages.length}`;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+function lbPrev(e) { e.stopPropagation(); lbIdx = (lbIdx-1+lbImages.length)%lbImages.length; openLB(); }
+function lbNext(e) { e.stopPropagation(); lbIdx = (lbIdx+1)%lbImages.length; openLB(); }
+
+// COMPARE
+function toggleCompareMode() {
+  compareMode = !compareMode;
+  document.body.classList.toggle('compare-mode', compareMode);
+  document.getElementById('compareBtn').classList.toggle('active', compareMode);
+  if (!compareMode) clearSelection();
+}
+function toggleSelect(card, src, name) {
+  const idx = selectedCards.findIndex(c=>c.src===src);
+  if (idx>=0) { selectedCards.splice(idx,1); } 
+  else { if (selectedCards.length>=4) return; selectedCards.push({src,name}); }
+  updateSelBadges(); updateBar();
+}
+function updateSelBadges() {
+  document.querySelectorAll('.card').forEach(card => {
+    const idx = selectedCards.findIndex(c=>c.src===card.dataset.src);
+    const badge = card.querySelector('.sel-badge');
+    if (badge) badge.textContent = idx>=0 ? idx+1 : '';
+    card.classList.toggle('selected', idx>=0);
+  });
+}
+function updateBar() {
+  const n = selectedCards.length;
+  document.getElementById('selCount').textContent = n;
+  document.getElementById('compareGoBtn').disabled = n < 2;
+  document.getElementById('compareBar').classList.toggle('show', compareMode && n>0);
+}
+function clearSelection() { selectedCards = []; updateSelBadges(); updateBar(); }
+function openCompare() {
+  const grid = document.getElementById('compareGrid');
+  const n = selectedCards.length;
+  grid.className = `compare-grid n${n}`;
+  grid.innerHTML = selectedCards.map(c => `
+    <div class="compare-cell">
+      <img src="${c.src}" alt="${c.name}">
+      <div class="compare-cell-lbl">${c.name||'Scene'}</div>
+    </div>`).join('');
+  document.getElementById('compareLb').classList.add('open');
+}
+function closeCompare() { document.getElementById('compareLb').classList.remove('open'); }
+
+// EDIT MODE
+function onEditClick() {
+  if (!editMode) {
+    document.getElementById('pwModal').classList.add('open');
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwError').style.display = 'none';
+    setTimeout(() => document.getElementById('pwInput').focus(), 100);
+  } else {
+    editMode = false;
+    document.body.classList.remove('edit-mode');
+    document.getElementById('editBtn').classList.remove('active');
+    document.getElementById('editBtn').textContent = '✏️ Edit';
+  }
+}
+function checkPw() {
+  if (document.getElementById('pwInput').value === PASS) {
+    closeModal('pwModal');
+    editMode = true;
+    document.body.classList.add('edit-mode');
+    document.getElementById('editBtn').classList.add('active');
+    document.getElementById('editBtn').textContent = '✓ Done';
+  } else {
+    document.getElementById('pwError').style.display = 'block';
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwInput').focus();
+  }
+}
+function closePwModal() { closeModal('pwModal'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+['pwModal','addSubjectModal','nameImgModal'].forEach(id => {
+  document.getElementById(id).addEventListener('click', e => { if (e.target===e.currentTarget) { if(id==='nameImgModal') confirmNameImg(); else closeModal(id); } });
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key==='Escape') { closeLightbox(); closeCompare(); }
+  if (document.getElementById('lightbox').classList.contains('open')) {
+    if (e.key==='ArrowLeft') lbPrev(e);
+    if (e.key==='ArrowRight') lbNext(e);
+  }
+});
+
+init();
+</script>
+</body>
+</html>
