@@ -474,7 +474,7 @@
    "id": "electrolytes",
    "name": "Electrolytes",
    "icon": "⚡",
-   "count": 48,
+   "count": 39,
    "topics": [
     {
      "name": "Acid–Base",
@@ -507,48 +507,6 @@
       {
        "file": "img/electrolytes/acid-base/07.jpg",
        "name": "SCENE F — Respiratory Acidosis & Alkalosis Setting- The Wind Tunnel Laboratory"
-      }
-     ]
-    },
-    {
-     "name": "Acid–Base / Questions",
-     "slug": "acid-base-questions",
-     "scenes": [
-      {
-       "file": "img/electrolytes/acid-base-questions/01.jpg",
-       "name": "Common Mixed Disorder Scenarios in Practice - of mitabolic acidosis and other"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/02.jpg",
-       "name": "-table 5804 causes of high anion gap"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/03.jpg",
-       "name": "- table 58-5 causes of non anion gap"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/04.jpg",
-       "name": "-table 581 compensation formulas"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/05.jpg",
-       "name": "-steps of acid base disorder approacch"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/06.jpg",
-       "name": "AG"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/07.jpg",
-       "name": "Screenshot 2025-12-09 at 23.24.33"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/08.jpg",
-       "name": "metabolic alkalosis causes"
-      },
-      {
-       "file": "img/electrolytes/acid-base-questions/09.jpg",
-       "name": "respiratory acidosis & alkalosis causes"
       }
      ]
     },
@@ -1698,7 +1656,7 @@
    "id": "hepatology",
    "name": "Hepatology",
    "icon": "🫀",
-   "count": 23,
+   "count": 20,
    "topics": [
     {
      "name": "ALD",
@@ -1729,24 +1687,6 @@
       {
        "file": "img/hepatology/approach/03.jpg",
        "name": "Harbor Dock"
-      }
-     ]
-    },
-    {
-     "name": "Approach / Questions",
-     "slug": "approach-questions",
-     "scenes": [
-      {
-       "file": "img/hepatology/approach-questions/01.jpg",
-       "name": "Left Lab Bench"
-      },
-      {
-       "file": "img/hepatology/approach-questions/02.jpg",
-       "name": "Mechanic's Workshop"
-      },
-      {
-       "file": "img/hepatology/approach-questions/03.jpg",
-       "name": "Transplant Court"
       }
      ]
     },
@@ -1976,7 +1916,7 @@
    "id": "nephrology",
    "name": "Nephrology",
    "icon": "🚽",
-   "count": 108,
+   "count": 101,
    "topics": [
     {
      "name": "General",
@@ -2117,28 +2057,6 @@
      ]
     },
     {
-     "name": "AKI / Questions",
-     "slug": "aki-questions",
-     "scenes": [
-      {
-       "file": "img/nephrology/aki-questions/01.jpg",
-       "name": "a"
-      },
-      {
-       "file": "img/nephrology/aki-questions/02.jpg",
-       "name": "b"
-      },
-      {
-       "file": "img/nephrology/aki-questions/03.jpg",
-       "name": "c"
-      },
-      {
-       "file": "img/nephrology/aki-questions/04.jpg",
-       "name": "d"
-      }
-     ]
-    },
-    {
      "name": "azotemia",
      "slug": "azotemia",
      "scenes": [
@@ -2203,24 +2121,6 @@
       {
        "file": "img/nephrology/azotemia-2/10.jpg",
        "name": "azotemia 2"
-      }
-     ]
-    },
-    {
-     "name": "Azotemia / Questions",
-     "slug": "azotemia-questions",
-     "scenes": [
-      {
-       "file": "img/nephrology/azotemia-questions/01.jpg",
-       "name": "gfr"
-      },
-      {
-       "file": "img/nephrology/azotemia-questions/02.jpg",
-       "name": "lithium"
-      },
-      {
-       "file": "img/nephrology/azotemia-questions/03.jpg",
-       "name": "protienrurea d"
       }
      ]
     },
@@ -3219,5 +3119,5 @@
    ]
   }
  ],
- "total": 621
+ "total": 602
 }
