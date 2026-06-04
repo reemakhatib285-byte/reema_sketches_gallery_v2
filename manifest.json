@@ -2604,7 +2604,7 @@
    "id": "respiratory",
    "name": "Respiratory",
    "icon": "🫁",
-   "count": 39,
+   "count": 42,
    "topics": [
     {
      "name": "General",
@@ -2663,6 +2663,18 @@
       {
        "file": "img/respiratory/asthma/11.jpg",
        "name": "asthma 5"
+      },
+      {
+       "file": "img/respiratory/asthma/12.jpg",
+       "name": "asthma exacerbation"
+      },
+      {
+       "file": "img/respiratory/asthma/13.jpg",
+       "name": "asthma sketchy origional"
+      },
+      {
+       "file": "img/respiratory/asthma/14.jpg",
+       "name": "asthma treatment - origional"
       }
      ]
     },
@@ -3131,5 +3143,5 @@
    ]
   }
  ],
- "total": 605
+ "total": 608
 }
