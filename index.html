@@ -72,6 +72,46 @@ footer a:hover{color:var(--accent);}
 .lb-nav:hover{border-color:var(--accent);}
 .lb-prev{left:18px;} .lb-next{right:18px;}
 @media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));}.scene img{height:96px;}.lb-nav{width:40px;height:40px;}}
+/* compare */
+.controls{display:flex;justify-content:flex-end;margin:-14px 0 22px;}
+.btn-compare{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:9px 15px;color:var(--text2);font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;cursor:pointer;transition:border-color .2s,color .2s;}
+.btn-compare:hover{border-color:var(--border2);color:var(--text1);}
+.btn-compare.active{border-color:var(--accent);color:var(--accent);background:var(--accent-bg);}
+.scene{position:relative;}
+.scene .sel-badge{position:absolute;top:7px;right:7px;width:24px;height:24px;border-radius:50%;background:rgba(8,11,18,0.7);border:1.5px solid var(--border3);color:transparent;display:none;align-items:center;justify-content:center;font-size:13px;font-weight:700;z-index:2;}
+body.compare-mode .scene{cursor:copy;}
+body.compare-mode .scene .sel-badge{display:flex;}
+.scene.sel{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset;}
+.scene.sel .sel-badge{background:var(--accent);border-color:var(--accent);color:#08111f;}
+.cmp-tray{position:fixed;left:0;right:0;bottom:0;z-index:250;background:rgba(13,17,32,0.96);border-top:1px solid var(--border2);backdrop-filter:blur(8px);padding:12px 16px;display:none;align-items:center;gap:12px;}
+.cmp-tray.show{display:flex;}
+.cmp-tray-thumbs{display:flex;gap:8px;flex:1;overflow-x:auto;}
+.cmp-thumb{position:relative;width:54px;height:54px;border-radius:8px;overflow:hidden;border:1px solid var(--border2);flex-shrink:0;}
+.cmp-thumb img{width:100%;height:100%;object-fit:cover;}
+.cmp-thumb button{position:absolute;top:1px;right:1px;width:16px;height:16px;border-radius:50%;background:rgba(0,0,0,0.7);border:none;color:#fff;font-size:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;}
+.cmp-hint{font-family:'Space Mono',monospace;font-size:11px;color:var(--text3);flex-shrink:0;}
+.cmp-tray-actions{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.btn-cmp-open{background:var(--accent);color:#08111f;border:none;border-radius:9px;padding:10px 16px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;}
+.btn-cmp-open:disabled{opacity:.4;cursor:not-allowed;}
+.btn-cmp-clear{background:transparent;color:var(--text2);border:1px solid var(--border2);border-radius:9px;padding:10px 14px;font-family:'Space Mono',monospace;font-size:12px;cursor:pointer;white-space:nowrap;}
+.cmp{display:none;position:fixed;inset:0;z-index:320;background:rgba(4,6,11,0.97);backdrop-filter:blur(4px);flex-direction:column;}
+.cmp.show{display:flex;}
+.cmp-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--border);flex-shrink:0;}
+.cmp-bar span{font-family:'Space Mono',monospace;font-size:12px;color:var(--text2);letter-spacing:0.05em;}
+.cmp-bar button{background:var(--surface);border:1px solid var(--border2);color:var(--text1);border-radius:8px;width:36px;height:36px;font-size:17px;cursor:pointer;}
+.cmp-grid{flex:1;display:grid;gap:2px;padding:2px;min-height:0;}
+.cmp-grid.n1{grid-template-columns:1fr;}
+.cmp-grid.n2{grid-template-columns:1fr 1fr;}
+.cmp-grid.n3{grid-template-columns:1fr 1fr 1fr;}
+.cmp-grid.n4{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;}
+.cmp-panel{position:relative;background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:auto;display:flex;align-items:center;justify-content:center;min-height:0;}
+.cmp-panel img{max-width:100%;max-height:100%;object-fit:contain;display:block;cursor:zoom-in;}
+.cmp-panel.zoom{align-items:flex-start;justify-content:flex-start;}
+.cmp-panel.zoom img{max-width:none;max-height:none;width:auto;cursor:zoom-out;}
+.cmp-ptools{position:absolute;top:6px;left:6px;right:6px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px;z-index:2;pointer-events:none;}
+.cmp-pname{font-size:11px;color:var(--text1);background:rgba(8,11,18,0.8);border:1px solid var(--border);border-radius:6px;padding:4px 8px;max-width:78%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:auto;}
+.cmp-pclose{width:24px;height:24px;border-radius:50%;background:rgba(8,11,18,0.85);border:1px solid var(--border2);color:#fff;font-size:12px;cursor:pointer;flex-shrink:0;pointer-events:auto;}
+@media(max-width:700px){.cmp-grid.n3,.cmp-grid.n4{grid-template-columns:1fr 1fr;grid-template-rows:auto;}.cmp-grid{overflow:auto;}.cmp-panel{min-height:42vh;}}
 </style>
 </head>
 <body>
@@ -96,10 +136,33 @@ footer a:hover{color:var(--accent);}
     <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     <input type="text" id="searchInput" placeholder="Search scenes, topics, subjects...">
   </div>
+  <div class="controls">
+    <button class="btn-compare" id="compareBtn" onclick="toggleCompareMode()">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/></svg>
+      Compare
+    </button>
+  </div>
   <div id="subjectsContainer"></div>
   <div class="loading" id="loading">Loading scenes…</div>
   <div class="no-results" id="noResults">No scenes match your search.</div>
   <footer>Sketch Gallery · Stage A Internal Medicine · 2026 · <a href="https://reemakhatib285-byte.github.io/boards-study-hub/">← Study Hub</a></footer>
+</div>
+
+<div class="cmp-tray" id="cmpTray">
+  <div class="cmp-tray-thumbs" id="cmpThumbs"></div>
+  <div class="cmp-hint" id="cmpHint">Pick up to 4</div>
+  <div class="cmp-tray-actions">
+    <button class="btn-cmp-clear" onclick="clearCompare()">Clear</button>
+    <button class="btn-cmp-open" id="cmpOpenBtn" onclick="openCompare()" disabled>Compare (0)</button>
+  </div>
+</div>
+
+<div class="cmp" id="cmpView">
+  <div class="cmp-bar">
+    <span id="cmpBarLabel">Compare</span>
+    <button onclick="closeCompare()" aria-label="Close">✕</button>
+  </div>
+  <div class="cmp-grid" id="cmpGrid"></div>
 </div>
 
 <div class="lb" id="lightbox">
@@ -116,6 +179,9 @@ let DATA = {subjects:[]};
 let FLAT = [];        // flattened scenes for lightbox navigation
 let lbIndex = -1;
 let openSubjects = new Set();
+let compareMode = false;
+const selected = new Map();   // file -> {file,name,subject,topic}
+const MAX_CMP = 4;
 
 async function init(){
   try{
@@ -161,7 +227,8 @@ function render(filter){
       t.scenes.forEach(s=>{
         const gi = FLAT.length;
         FLAT.push({file:s.file,name:s.name,subject:subj.name,topic:t.name});
-        body += `<div class="scene" onclick="openLb(${gi})"><img loading="lazy" src="${esc(s.file)}" alt="${esc(s.name)}"><div class="scene-cap">${esc(s.name)}</div></div>`;
+        const selCls = selected.has(s.file) ? ' sel' : '';
+        body += `<div class="scene${selCls}" data-file="${esc(s.file)}" onclick="onSceneClick(${gi},this)"><span class="sel-badge">✓</span><img loading="lazy" src="${esc(s.file)}" alt="${esc(s.name)}"><div class="scene-cap">${esc(s.name)}</div></div>`;
       });
       body += `</div></div>`;
     });
@@ -194,9 +261,77 @@ function openLb(i){
 function closeLb(){document.getElementById('lightbox').classList.remove('show');}
 function navLb(d,e){if(e)e.stopPropagation();if(!FLAT.length)return;lbIndex=(lbIndex+d+FLAT.length)%FLAT.length;openLb(lbIndex);}
 
+/* ---- compare ---- */
+function cssEsc(s){return (window.CSS&&CSS.escape)?CSS.escape(s):s.replace(/["\\]/g,'\\$&');}
+function onSceneClick(i,el){ compareMode ? toggleSelect(i,el) : openLb(i); }
+function toggleCompareMode(){
+  compareMode=!compareMode;
+  document.body.classList.toggle('compare-mode',compareMode);
+  document.getElementById('compareBtn').classList.toggle('active',compareMode);
+  updateTray();
+}
+function toggleSelect(i,el){
+  const s=FLAT[i]; if(!s) return;
+  if(selected.has(s.file)){ selected.delete(s.file); if(el)el.classList.remove('sel'); }
+  else{
+    if(selected.size>=MAX_CMP){ flashHint('Max 4 — remove one first'); return; }
+    selected.set(s.file,{file:s.file,name:s.name,subject:s.subject,topic:s.topic});
+    if(el)el.classList.add('sel');
+  }
+  updateTray();
+}
+function flashHint(msg){
+  const h=document.getElementById('cmpHint'); h.textContent=msg; h.style.color='#fca5a5';
+  setTimeout(()=>{h.textContent=selected.size?`${selected.size}/4 selected`:'Pick up to 4';h.style.color='';},1500);
+}
+function updateTray(){
+  const tray=document.getElementById('cmpTray'), thumbs=document.getElementById('cmpThumbs');
+  const openBtn=document.getElementById('cmpOpenBtn'), hint=document.getElementById('cmpHint');
+  tray.classList.toggle('show',compareMode);
+  thumbs.innerHTML='';
+  selected.forEach(s=>{
+    const d=document.createElement('div'); d.className='cmp-thumb';
+    d.innerHTML=`<img src="${esc(s.file)}" alt=""><button onclick="removeSel('${esc(s.file)}')">✕</button>`;
+    thumbs.appendChild(d);
+  });
+  openBtn.textContent=`Compare (${selected.size})`;
+  openBtn.disabled=selected.size<2;
+  hint.textContent=selected.size?`${selected.size}/4 selected`:'Pick up to 4';
+  hint.style.color='';
+}
+function removeSel(file){
+  selected.delete(file);
+  const el=document.querySelector(`.scene[data-file="${cssEsc(file)}"]`);
+  if(el)el.classList.remove('sel');
+  updateTray();
+  if(document.getElementById('cmpView').classList.contains('show')){
+    selected.size<2 ? closeCompare() : openCompare();
+  }
+}
+function clearCompare(){
+  selected.clear();
+  document.querySelectorAll('.scene.sel').forEach(e=>e.classList.remove('sel'));
+  updateTray();
+}
+function openCompare(){
+  if(selected.size<2) return;
+  const items=[...selected.values()];
+  const grid=document.getElementById('cmpGrid');
+  grid.className='cmp-grid n'+items.length;
+  grid.innerHTML=items.map(s=>`
+    <div class="cmp-panel" onclick="if(event.target.tagName==='IMG')this.classList.toggle('zoom')">
+      <div class="cmp-ptools"><span class="cmp-pname">${esc(s.name)}</span><button class="cmp-pclose" onclick="event.stopPropagation();removeSel('${esc(s.file)}')">✕</button></div>
+      <img src="${esc(s.file)}" alt="${esc(s.name)}">
+    </div>`).join('');
+  document.getElementById('cmpBarLabel').textContent=`Comparing ${items.length} scenes · tap an image to zoom`;
+  document.getElementById('cmpView').classList.add('show');
+}
+function closeCompare(){ document.getElementById('cmpView').classList.remove('show'); }
+
 document.getElementById('searchInput').addEventListener('input',function(){render(this.value);});
 document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeLb();});
 document.addEventListener('keydown',e=>{
+  if(document.getElementById('cmpView').classList.contains('show')){ if(e.key==='Escape')closeCompare(); return; }
   if(!document.getElementById('lightbox').classList.contains('show'))return;
   if(e.key==='Escape')closeLb();
   if(e.key==='ArrowLeft')navLb(-1);
