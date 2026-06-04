@@ -1,0 +1,2357 @@
+{
+ "subjects": [
+  {
+   "id": "cardiology",
+   "name": "Cardiology",
+   "icon": "🫀",
+   "count": 80,
+   "topics": [
+    {
+     "name": "General",
+     "slug": "general",
+     "scenes": [
+      {
+       "file": "img/cardiology/general/01.jpg",
+       "name": "CKD CV mortality + LVH + HF + low-pressure pulm edema + uremic pericarditis (+ other causes panel) + troponin trend + MIA paradox + AV fistula + HTN 3-step staircase + CCBs"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / Approach to Supraventricular Arrhythmias",
+     "slug": "arrythmias-approach-to-supraventricular-arrhythmias",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-approach-to-supraventricular-arrhythmias/01.jpg",
+       "name": "1"
+      },
+      {
+       "file": "img/cardiology/arrythmias-approach-to-supraventricular-arrhythmias/02.jpg",
+       "name": "2"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / approach vt",
+     "slug": "arrythmias-approach-vt",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-approach-vt/01.jpg",
+       "name": "Gemini_Generated_Image_dss8vxdss8vxdss8"
+      },
+      {
+       "file": "img/cardiology/arrythmias-approach-vt/02.jpg",
+       "name": "Gemini_Generated_Image_h0kdv9h0kdv9h0kd"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / Paroxysmal Supraventricular Tachycardias",
+     "slug": "arrythmias-paroxysmal-supraventricular-tachycardias",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-paroxysmal-supraventricular-tachycardias/01.jpg",
+       "name": "1"
+      },
+      {
+       "file": "img/cardiology/arrythmias-paroxysmal-supraventricular-tachycardias/02.jpg",
+       "name": "2"
+      },
+      {
+       "file": "img/cardiology/arrythmias-paroxysmal-supraventricular-tachycardias/03.jpg",
+       "name": "3"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / Polymorphic VT, VF, Electrical Storm & Incessant VT — Complete Notes",
+     "slug": "arrythmias-polymorphic-vt-vf-electrical-storm-incessant-vt-complete-notes",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-polymorphic-vt-vf-electrical-storm-incessant-vt-complete-notes/01.jpg",
+       "name": "Gemini_Generated_Image_8n4ruf8n4ruf8n4r"
+      },
+      {
+       "file": "img/cardiology/arrythmias-polymorphic-vt-vf-electrical-storm-incessant-vt-complete-notes/02.jpg",
+       "name": "Gemini_Generated_Image_zhs9e5zhs9e5zhs9"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / Premature Ventricular Contractions, Nonsustained Ventricular Tachycardia, and Accelerated Idioventricular Rhythm",
+     "slug": "arrythmias-premature-ventricular-contractions-nonsustained-ventricular-tachycardia-and-accelerated-idioventricular-rhythm",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-premature-ventricular-contractions-nonsustained-ventricular-tachycardia-and-accelerated-idioventricular-rhythm/01.jpg",
+       "name": "Gemini_Generated_Image_8g802b8g802b8g80"
+      },
+      {
+       "file": "img/cardiology/arrythmias-premature-ventricular-contractions-nonsustained-ventricular-tachycardia-and-accelerated-idioventricular-rhythm/02.jpg",
+       "name": "Gemini_Generated_Image_tqhf18tqhf18tqhf"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / sinus tachy",
+     "slug": "arrythmias-sinus-tachy",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-sinus-tachy/01.jpg",
+       "name": "Gemini_Generated_Image_iaat1miaat1miaat"
+      }
+     ]
+    },
+    {
+     "name": "arrythmias / Sustained Ventricular Tachycardia-monomorphic",
+     "slug": "arrythmias-sustained-ventricular-tachycardia-monomorphic",
+     "scenes": [
+      {
+       "file": "img/cardiology/arrythmias-sustained-ventricular-tachycardia-monomorphic/01.jpg",
+       "name": "Gemini_Generated_Image_b0ld6mb0ld6mb0ld"
+      },
+      {
+       "file": "img/cardiology/arrythmias-sustained-ventricular-tachycardia-monomorphic/02.jpg",
+       "name": "Gemini_Generated_Image_d0ts0ud0ts0ud0ts"
+      },
+      {
+       "file": "img/cardiology/arrythmias-sustained-ventricular-tachycardia-monomorphic/03.jpg",
+       "name": "Gemini_Generated_Image_fjvp8ifjvp8ifjvp"
+      }
+     ]
+    },
+    {
+     "name": "Hf heart failure",
+     "slug": "hf-heart-failure",
+     "scenes": [
+      {
+       "file": "img/cardiology/hf-heart-failure/01.jpg",
+       "name": "HF comorbideties"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/02.jpg",
+       "name": "CRT"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/03.jpg",
+       "name": "-ICD"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/04.jpg",
+       "name": "- hf surgery"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/05.jpg",
+       "name": "FIGURE 265-2 The distinctive phenotypes of acute decompensated heart failure (ADHF), their presentations, and suggested therapeutic routes."
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/06.jpg",
+       "name": "FIGURE 265-3 Progressive decline in mortality"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/07.jpg",
+       "name": "HFrEF drugs"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/08.jpg",
+       "name": "ICD primary prevention"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/09.jpg",
+       "name": "SCENE 1 — HF CAUSES & PATHOGENESIS"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/10.jpg",
+       "name": "SCENE 2 — HF EVALUATION & NYHA"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/11.jpg",
+       "name": "SCENE 3 — HF DIAGNOSIS, BNP TRAPS & DDx"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/12.jpg",
+       "name": "SCENE 4 — HFrEF GDMT- \"The Four-Pillar Apothecary\""
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/13.jpg",
+       "name": "SCENE 5 — HFrEF MORTALITY U-CURVE: \"The Survival Curve Gallery\""
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/14.jpg",
+       "name": "SCENE 6 — HF HALL OF SHAME & COMORBIDITIES: \"The HFrEF Forbidden Vault\""
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/15.jpg",
+       "name": "SCENE 7 — ADHF PHENOTYPES: \"The ER Triage Bay — 4 Beds\""
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/16.jpg",
+       "name": "SCENE 8 — ADHF TRIALS & DISCHARGE: \"The Trial Graveyard & The Bridge Home\""
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/17.jpg",
+       "name": "SCENE 9 — HFpEF- \"The Crumbling Apothecary\""
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/18.jpg",
+       "name": "acute decompensated HF ADHF"
+      },
+      {
+       "file": "img/cardiology/hf-heart-failure/19.jpg",
+       "name": "pathophysiology correlation of general therapiutic HF"
+      }
+     ]
+    },
+    {
+     "name": "htn* new",
+     "slug": "htn-new",
+     "scenes": [
+      {
+       "file": "img/cardiology/htn-new/01.jpg",
+       "name": "htn1"
+      },
+      {
+       "file": "img/cardiology/htn-new/02.jpg",
+       "name": "htn2"
+      },
+      {
+       "file": "img/cardiology/htn-new/03.jpg",
+       "name": "htn3"
+      },
+      {
+       "file": "img/cardiology/htn-new/04.jpg",
+       "name": "htn4"
+      },
+      {
+       "file": "img/cardiology/htn-new/05.jpg",
+       "name": "htn5"
+      },
+      {
+       "file": "img/cardiology/htn-new/06.jpg",
+       "name": "htn6"
+      }
+     ]
+    },
+    {
+     "name": "hypertension",
+     "slug": "hypertension",
+     "scenes": [
+      {
+       "file": "img/cardiology/hypertension/01.jpg",
+       "name": "- antihypertensive"
+      },
+      {
+       "file": "img/cardiology/hypertension/02.jpg",
+       "name": "- HTN emergency"
+      },
+      {
+       "file": "img/cardiology/hypertension/03.jpg",
+       "name": "SCENE 1 — The BP City Hall (HTN Physiology + Classification + Measurement)"
+      },
+      {
+       "file": "img/cardiology/hypertension/04.jpg",
+       "name": "scene 2- secondary HTN"
+      }
+     ]
+    },
+    {
+     "name": "IHD * new",
+     "slug": "ihd-new",
+     "scenes": [
+      {
+       "file": "img/cardiology/ihd-new/01.jpg",
+       "name": "D"
+      },
+      {
+       "file": "img/cardiology/ihd-new/02.jpg",
+       "name": "b"
+      },
+      {
+       "file": "img/cardiology/ihd-new/03.jpg",
+       "name": "c"
+      },
+      {
+       "file": "img/cardiology/ihd-new/04.jpg",
+       "name": "stress test"
+      }
+     ]
+    },
+    {
+     "name": "ihd / ihd",
+     "slug": "ihd-ihd",
+     "scenes": [
+      {
+       "file": "img/cardiology/ihd-ihd/01.jpg",
+       "name": "Gemini_Generated_Image_3591qq3591qq3591"
+      },
+      {
+       "file": "img/cardiology/ihd-ihd/02.jpg",
+       "name": "Gemini_Generated_Image_cbp3ibcbp3ibcbp3"
+      },
+      {
+       "file": "img/cardiology/ihd-ihd/03.jpg",
+       "name": "Gemini_Generated_Image_d8h66zd8h66zd8h6"
+      },
+      {
+       "file": "img/cardiology/ihd-ihd/04.jpg",
+       "name": "Gemini_Generated_Image_oothnsoothnsooth"
+      },
+      {
+       "file": "img/cardiology/ihd-ihd/05.jpg",
+       "name": "Gemini_Generated_Image_oqqr2noqqr2noqqr"
+      },
+      {
+       "file": "img/cardiology/ihd-ihd/06.jpg",
+       "name": "IHD 1- stress test"
+      }
+     ]
+    },
+    {
+     "name": "ihd / nstemi",
+     "slug": "ihd-nstemi",
+     "scenes": [
+      {
+       "file": "img/cardiology/ihd-nstemi/01.jpg",
+       "name": "nstemi 3"
+      },
+      {
+       "file": "img/cardiology/ihd-nstemi/02.jpg",
+       "name": "nstemi1"
+      },
+      {
+       "file": "img/cardiology/ihd-nstemi/03.jpg",
+       "name": "nstemi2"
+      }
+     ]
+    },
+    {
+     "name": "ihd / stemi",
+     "slug": "ihd-stemi",
+     "scenes": [
+      {
+       "file": "img/cardiology/ihd-stemi/01.jpg",
+       "name": "1"
+      },
+      {
+       "file": "img/cardiology/ihd-stemi/02.jpg",
+       "name": "2"
+      },
+      {
+       "file": "img/cardiology/ihd-stemi/03.jpg",
+       "name": "3"
+      },
+      {
+       "file": "img/cardiology/ihd-stemi/04.jpg",
+       "name": "4"
+      },
+      {
+       "file": "img/cardiology/ihd-stemi/05.jpg",
+       "name": "5"
+      },
+      {
+       "file": "img/cardiology/ihd-stemi/06.jpg",
+       "name": "6"
+      },
+      {
+       "file": "img/cardiology/ihd-stemi/07.jpg",
+       "name": "7"
+      }
+     ]
+    },
+    {
+     "name": "infective ednocarditis",
+     "slug": "infective-ednocarditis",
+     "scenes": [
+      {
+       "file": "img/cardiology/infective-ednocarditis/01.jpg",
+       "name": "IE 1"
+      },
+      {
+       "file": "img/cardiology/infective-ednocarditis/02.jpg",
+       "name": "IE 2"
+      },
+      {
+       "file": "img/cardiology/infective-ednocarditis/03.jpg",
+       "name": "IE 3"
+      },
+      {
+       "file": "img/cardiology/infective-ednocarditis/04.jpg",
+       "name": "IE 4"
+      }
+     ]
+    },
+    {
+     "name": "vte",
+     "slug": "vte",
+     "scenes": [
+      {
+       "file": "img/cardiology/vte/01.jpg",
+       "name": "vte 1"
+      },
+      {
+       "file": "img/cardiology/vte/02.jpg",
+       "name": "vte diagnosis 1"
+      },
+      {
+       "file": "img/cardiology/vte/03.jpg",
+       "name": "vte diagnosis 2"
+      },
+      {
+       "file": "img/cardiology/vte/04.jpg",
+       "name": "vte tx 1"
+      },
+      {
+       "file": "img/cardiology/vte/05.jpg",
+       "name": "vte tx 2"
+      }
+     ]
+    },
+    {
+     "name": "vte / VTE",
+     "slug": "vte-vte",
+     "scenes": [
+      {
+       "file": "img/cardiology/vte-vte/01.jpg",
+       "name": "VTE 1"
+      },
+      {
+       "file": "img/cardiology/vte-vte/02.jpg",
+       "name": "VTE 2"
+      },
+      {
+       "file": "img/cardiology/vte-vte/03.jpg",
+       "name": "VTE 3"
+      },
+      {
+       "file": "img/cardiology/vte-vte/04.jpg",
+       "name": "VTE 4"
+      },
+      {
+       "file": "img/cardiology/vte-vte/05.jpg",
+       "name": "VTE 5"
+      },
+      {
+       "file": "img/cardiology/vte-vte/06.jpg",
+       "name": "VTE 6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "electrolytes",
+   "name": "Electrolytes",
+   "icon": "📚",
+   "count": 32,
+   "topics": [
+    {
+     "name": "Hyperkalemia - potassium",
+     "slug": "hyperkalemia-potassium",
+     "scenes": [
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/01.jpg",
+       "name": "HYPERKALEMIA K nephron secreting mechanisms 4"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/02.jpg",
+       "name": "HYPERKALEMIA RTA 6"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/03.jpg",
+       "name": "HYPERKALEMIA diagnosis 9"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/04.jpg",
+       "name": "HYPERKALEMIA excess K intake & load 2"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/05.jpg",
+       "name": "HYPERKALEMIA clinical features 8"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/06.jpg",
+       "name": "HYPERKALEMIA mechnaisms 1"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/07.jpg",
+       "name": "HYPERKALEMIA redistribution 3"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/08.jpg",
+       "name": "HYPERKALEMIA treatment 10"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/09.jpg",
+       "name": "HYPERKALEMIA where renal K excretion fails 5"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/10.jpg",
+       "name": "hyperk 9 v1"
+      },
+      {
+       "file": "img/electrolytes/hyperkalemia-potassium/11.jpg",
+       "name": "hyperkalemia drugs 7"
+      }
+     ]
+    },
+    {
+     "name": "hypernatremia",
+     "slug": "hypernatremia",
+     "scenes": [
+      {
+       "file": "img/electrolytes/hypernatremia/01.jpg",
+       "name": "Hypernatremia Diagnostic Algorithm"
+      },
+      {
+       "file": "img/electrolytes/hypernatremia/02.jpg",
+       "name": "hypenatremia tx calculation"
+      },
+      {
+       "file": "img/electrolytes/hypernatremia/03.jpg",
+       "name": "hypernatremia clinical features"
+      },
+      {
+       "file": "img/electrolytes/hypernatremia/04.jpg",
+       "name": "hypernatremia tx algorithm & fliud chice"
+      },
+      {
+       "file": "img/electrolytes/hypernatremia/05.jpg",
+       "name": "hypernatremia tx speicifics"
+      },
+      {
+       "file": "img/electrolytes/hypernatremia/06.jpg",
+       "name": "hypernatremia"
+      }
+     ]
+    },
+    {
+     "name": "Hypokalemia - potassium",
+     "slug": "hypokalemia-potassium",
+     "scenes": [
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/01.jpg",
+       "name": "gi - extrarenal loss - hypokalemia"
+      },
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/02.jpg",
+       "name": "hypokalemia diagnosis"
+      },
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/03.jpg",
+       "name": "hypokalemia diagnosis algorithm"
+      },
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/04.jpg",
+       "name": "hypokalemia redistributiuon"
+      },
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/05.jpg",
+       "name": "hypokalemia treatment"
+      },
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/06.jpg",
+       "name": "hypoklameia clinical features"
+      },
+      {
+       "file": "img/electrolytes/hypokalemia-potassium/07.jpg",
+       "name": "renal potassiun loss hypokalemia"
+      }
+     ]
+    },
+    {
+     "name": "hyponatremia",
+     "slug": "hyponatremia",
+     "scenes": [
+      {
+       "file": "img/electrolytes/hyponatremia/01.jpg",
+       "name": "euvolemic hypona"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/02.jpg",
+       "name": "hypervolemic hypona"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/03.jpg",
+       "name": "hyponatremia diganostic approach"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/04.jpg",
+       "name": "hyponatremia tx"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/05.jpg",
+       "name": "hyponatremia volume statrus"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/06.jpg",
+       "name": "hyponatremia"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/07.jpg",
+       "name": "hypovolumic hyponatremia"
+      },
+      {
+       "file": "img/electrolytes/hyponatremia/08.jpg",
+       "name": "low solutes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "endocrine",
+   "name": "Endocrine",
+   "icon": "📚",
+   "count": 85,
+   "topics": [
+    {
+     "name": "General",
+     "slug": "general",
+     "scenes": [
+      {
+       "file": "img/endocrine/general/01.jpg",
+       "name": "endo"
+      }
+     ]
+    },
+    {
+     "name": "adrenal",
+     "slug": "adrenal",
+     "scenes": [
+      {
+       "file": "img/endocrine/adrenal/01.jpg",
+       "name": "CAH triplet"
+      },
+      {
+       "file": "img/endocrine/adrenal/02.jpg",
+       "name": "SCENE 1 — THE ACC VILLAIN REVEAL"
+      },
+      {
+       "file": "img/endocrine/adrenal/03.jpg",
+       "name": "SCENE 1 — THE ALDOSTERONE SALT FACTORY"
+      },
+      {
+       "file": "img/endocrine/adrenal/04.jpg",
+       "name": "SCENE 1 — THE STEROIDOGENESIS FACTORY 2"
+      },
+      {
+       "file": "img/endocrine/adrenal/05.jpg",
+       "name": "SCENE 1 — THE THREE BUCKET HOSPITAL Setting metaphor"
+      },
+      {
+       "file": "img/endocrine/adrenal/06.jpg",
+       "name": "SCENE 1 — THE TWO-QUESTION TRIAGE BAY"
+      },
+      {
+       "file": "img/endocrine/adrenal/07.jpg",
+       "name": "SCENE 19 — ARR DETECTIVE LAB + AVS + TREATMENT v2"
+      },
+      {
+       "file": "img/endocrine/adrenal/08.jpg",
+       "name": "SCENE 2 — CAH TRIPLETS v2"
+      },
+      {
+       "file": "img/endocrine/adrenal/09.jpg",
+       "name": "SCENE 2 — THE ADRENAL MASS GALLERY"
+      },
+      {
+       "file": "img/endocrine/adrenal/10.jpg",
+       "name": "SCENE 2 — THE ALDOSTERONE CAUSES GALLERY"
+      },
+      {
+       "file": "img/endocrine/adrenal/11.jpg",
+       "name": "SCENE 2 — THE CUSHINGOID PATIENT CLINIC3"
+      },
+      {
+       "file": "img/endocrine/adrenal/12.jpg",
+       "name": "SCENE 2 — THE ETIOLOGY ATLAS"
+      },
+      {
+       "file": "img/endocrine/adrenal/13.jpg",
+       "name": "SCENE 2 — THE IMAGING WAR ROOM AND PATHOLOGY LAB"
+      },
+      {
+       "file": "img/endocrine/adrenal/14.jpg",
+       "name": "SCENE 3 — THE DETECTIVE'S DIAGNOSTIC LAB"
+      },
+      {
+       "file": "img/endocrine/adrenal/15.jpg",
+       "name": "SCENE 3 — THE DETECTIVE'S DIAffGNOSTIC LAB"
+      },
+      {
+       "file": "img/endocrine/adrenal/16.jpg",
+       "name": "SCENE 3 — THE DIAGNOSTIC CLINIC AND TREATMENT PHARMACY"
+      },
+      {
+       "file": "img/endocrine/adrenal/17.jpg",
+       "name": "SCENE 3 — THE IMAGING DETECTIVE LAB AND SURGICAL DECISION TREE"
+      },
+      {
+       "file": "img/endocrine/adrenal/18.jpg",
+       "name": "SCENE 3 — THE LOW-RENIN HYPERTENSION"
+      },
+      {
+       "file": "img/endocrine/adrenal/19.jpg",
+       "name": "SCENE 3 — THE SURGICAL ARMORY AND MITOTANE APOTHECARY\\"
+      },
+      {
+       "file": "img/endocrine/adrenal/20.jpg",
+       "name": "SCENE 4 — THE ARR DETECTIVE LAB + TREATMENT"
+      },
+      {
+       "file": "img/endocrine/adrenal/21.jpg",
+       "name": "SCENE 4 — THE DIAGNOSTIC ALGORITHM LAB AND REPLACEMENT PHARMACY. 4png"
+      },
+      {
+       "file": "img/endocrine/adrenal/22.jpg",
+       "name": "SCENE 6 — THE THREE-BUCKET HOSPITAL v2"
+      },
+      {
+       "file": "img/endocrine/adrenal/23.jpg",
+       "name": "THE CUSHING CAUSES COURT 1"
+      },
+      {
+       "file": "img/endocrine/adrenal/24.jpg",
+       "name": "adrenal 1"
+      },
+      {
+       "file": "img/endocrine/adrenal/25.jpg",
+       "name": "cushing dx"
+      },
+      {
+       "file": "img/endocrine/adrenal/26.jpg",
+       "name": "cushing treatment"
+      }
+     ]
+    },
+    {
+     "name": "Diabetes mellitus DM",
+     "slug": "diabetes-mellitus-dm",
+     "scenes": [
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/01.jpg",
+       "name": "DM dx overview 1"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/02.jpg",
+       "name": "DM dx overview 2"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/03.jpg",
+       "name": "Scene B — The Diabetes War Room"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/04.jpg",
+       "name": "Screenshot 2026-05-22 at 22.02.02"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/05.jpg",
+       "name": "Screenshot 2026-05-22 at 22.02.19"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/06.jpg",
+       "name": "Screenshot 2026-05-22 at 22.02.48"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/07.jpg",
+       "name": "Screenshot 2026-05-22 at 22.02.53"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/08.jpg",
+       "name": "Screenshot 2026-05-22 at 22.03.10"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/09.jpg",
+       "name": "Screenshot 2026-05-22 at 22.03.15"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/10.jpg",
+       "name": "Screenshot 2026-05-22 at 22.03.19"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/11.jpg",
+       "name": "diabetes emrergency"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/12.jpg",
+       "name": "diabetes tx 1"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/13.jpg",
+       "name": "dm complication1"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm/14.jpg",
+       "name": "dmn complication 2"
+      }
+     ]
+    },
+    {
+     "name": "Diabetes mellitus DM / DM",
+     "slug": "diabetes-mellitus-dm-dm",
+     "scenes": [
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/01.jpg",
+       "name": "acute hypreglycemic crisis"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/02.jpg",
+       "name": "- insulin"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/03.jpg",
+       "name": "Scene 1 — DM Pathophys & Dx- The Diagnostic Threshold Crossing"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/04.jpg",
+       "name": "Scene 1 — Diabetes Pharmacology- The Liver-Pancreas Workshop"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/05.jpg",
+       "name": "Scene 1 — Diabetic Complications- The Eye Tower Topics encoded"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/06.jpg",
+       "name": "Scene 1 — T2DM Algorithms: The Severity Triage Gate Topics encoded"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/07.jpg",
+       "name": "Scene 2 v2 — Diabetic Complications- The Kidney Wing & Albumin River (REBUILD)"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/08.jpg",
+       "name": "Scene 2 — DM Pathophys & Dx- T1DM Battle vs T2DM Factory"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/09.jpg",
+       "name": "Scene 2 — Diabetes Pharmacology- The Gut-Kidney Plumbing.png"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/10.jpg",
+       "name": "Scene 2 — T2DM Algorithms: The Phenotype Picker's Pharmacy"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/11.jpg",
+       "name": "Scene 3 — DM Pathophys & Dx- The Classification Hall"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/12.jpg",
+       "name": "Scene 3 — Diabetic Complications: The Nerve Cellar Topics encoded"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/13.jpg",
+       "name": "Scene 3 — T2DM Algorithms: The Escalation Staircase & A1c Target Dial"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/14.jpg",
+       "name": "Scene 4A — Diabetic Complications- The Foot Gates & Infection Moat (REBUILD - SPLIT)"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/15.jpg",
+       "name": "Scene 4B — Diabetic Complications- The CVD Battlefield & Skin Mural (REBUILD - SPLIT)"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/16.jpg",
+       "name": "acute hypreglycemic tretametn"
+      },
+      {
+       "file": "img/endocrine/diabetes-mellitus-dm-dm/17.jpg",
+       "name": "scene3 incretic"
+      }
+     ]
+    },
+    {
+     "name": "neurohypophysis",
+     "slug": "neurohypophysis",
+     "scenes": [
+      {
+       "file": "img/endocrine/neurohypophysis/01.jpg",
+       "name": "5"
+      },
+      {
+       "file": "img/endocrine/neurohypophysis/02.jpg",
+       "name": "DI diabetes insipidus causes"
+      },
+      {
+       "file": "img/endocrine/neurohypophysis/03.jpg",
+       "name": "DI diabetes insipidus tx"
+      },
+      {
+       "file": "img/endocrine/neurohypophysis/04.jpg",
+       "name": "SIADH"
+      },
+      {
+       "file": "img/endocrine/neurohypophysis/05.jpg",
+       "name": "neurohypophysis AVP"
+      },
+      {
+       "file": "img/endocrine/neurohypophysis/06.jpg",
+       "name": "polyurea diagnosis"
+      }
+     ]
+    },
+    {
+     "name": "parathyroid + bone",
+     "slug": "parathyroid-bone",
+     "scenes": [
+      {
+       "file": "img/endocrine/parathyroid-bone/01.jpg",
+       "name": "BONE & MINERAL CHAPTER 1"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/02.jpg",
+       "name": "BONE & MINERAL CHAPTER 2"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/03.jpg",
+       "name": "BONE & MINERAL CHAPTER 3"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/04.jpg",
+       "name": "hypoparathy"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/05.jpg",
+       "name": "non parathyrpod hypoca"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/06.jpg",
+       "name": "parathyrois"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/07.jpg",
+       "name": "pseduoparathyroid"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/08.jpg",
+       "name": "pth malignancy"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/09.jpg",
+       "name": "the rever harrbor"
+      },
+      {
+       "file": "img/endocrine/parathyroid-bone/10.jpg",
+       "name": "vit d marketplace"
+      }
+     ]
+    },
+    {
+     "name": "thyroid",
+     "slug": "thyroid",
+     "scenes": [
+      {
+       "file": "img/endocrine/thyroid/01.jpg",
+       "name": "CENE A — Thyroid Diagnostic Algorithm Setting-"
+      },
+      {
+       "file": "img/endocrine/thyroid/02.jpg",
+       "name": "CENE G — THE NODULE TRIAGE CROSSROADS v2 Thyroid Nodule Algorithm + TI-RADS + Cancer Red Flags + Pemberton + CT Contrast Trap"
+      },
+      {
+       "file": "img/endocrine/thyroid/03.jpg",
+       "name": "SCENE 2 — THE BETHESDA CYTOLOGY LIBRARY FNA + Bethesda Categories + Molecular Testing + The Follicular Paradox"
+      },
+      {
+       "file": "img/endocrine/thyroid/04.jpg",
+       "name": "SCENE 5 — THE PAINFUL THYROIDITIS CLINIC Subacute (de Quervain) + Silent:Postpartum Thyroiditis + Triphasic Course"
+      },
+      {
+       "file": "img/endocrine/thyroid/05.jpg",
+       "name": "SCENE A — THE OVERACTIVE BAZAAR v2 Graves' + Hyperthyroidism Causes + Clinical Features"
+      },
+      {
+       "file": "img/endocrine/thyroid/06.jpg",
+       "name": "SCENE B — THE UPTAKE DETECTIVE'S OFFICE v2 Diagnostic Algorithm + High vs Low Uptake + Gestational + T3 Toxicosis"
+      },
+      {
+       "file": "img/endocrine/thyroid/07.jpg",
+       "name": "SCENE C — THE STORM WAR ROOM v2 Thyroid Storm Treatment Order + AIT Type 1 vs 2 + Amiodarone Drug Interactions"
+      },
+      {
+       "file": "img/endocrine/thyroid/08.jpg",
+       "name": "SCENE D — THE FROZEN VILLAGE v2 Hypothyroidism- Causes + Clinical Features + Lab Traps GEMINI PROMPT"
+      },
+      {
+       "file": "img/endocrine/thyroid/09.jpg",
+       "name": "SCENE E — THE CLOCKMAKER'S WORKSHOP v2 LT4 Algorithm + Drug Interactions + Subclinical + Pregnancy + Non-adherence"
+      },
+      {
+       "file": "img/endocrine/thyroid/10.jpg",
+       "name": "SCENE F — THE MYXEDEMA COMA EMERGENCY ROOM v2 Myxedema Coma + Central Hypothyroidism + Lab Pitfalls"
+      },
+      {
+       "file": "img/endocrine/thyroid/11.jpg",
+       "name": "SCENE H — THE CANCER TWINS SURGICAL HOSPITAL v2 PTC + FTC + MTC + Thyroid Lymphoma + Surgery + Follow-up + TSH Suppression + RAI"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hemato-oncology",
+   "name": "Hemato+ oncology",
+   "icon": "🩸",
+   "count": 103,
+   "topics": [
+    {
+     "name": "General",
+     "slug": "general",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/general/01.jpg",
+       "name": "hemato"
+      }
+     ]
+    },
+    {
+     "name": "anemia / 66",
+     "slug": "anemia-66",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-66/01.jpg",
+       "name": "2"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-66/02.jpg",
+       "name": "3"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-66/03.jpg",
+       "name": "4"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-66/04.jpg",
+       "name": "@@1"
+      }
+     ]
+    },
+    {
+     "name": "anemia / BMF",
+     "slug": "anemia-bmf",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-bmf/01.jpg",
+       "name": "The Empty Factory — BMF Overview"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/02.jpg",
+       "name": "The Aplastic Wasteland — AA Etiology"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/03.jpg",
+       "name": "The Constitutional Archives — Inherited BMF"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/04.jpg",
+       "name": "The Immune Siege — AA Pathophysiology & Diagnosis"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/05.jpg",
+       "name": ".The Rescue Station — AA Treatment png"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/06.jpg",
+       "name": ".The Red Cell Void — PRCApng"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/07.jpg",
+       "name": "he Dysplastic Assembly Line + The MDS Clinic"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/08.jpg",
+       "name": "he Dysplastic Assembly Line + The MDS Clinic"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/09.jpg",
+       "name": "The MDS Scoreboard & Arsenal — Prognosis & Treatment"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-bmf/10.jpg",
+       "name": "The Fibrotic Quarry — Myelophthisic Anemias"
+      }
+     ]
+    },
+    {
+     "name": "anemia / hemoglobin",
+     "slug": "anemia-hemoglobin",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/01.jpg",
+       "name": "SCENE_32The Hemoglobin ForgeHb structure + gene clusters + O₂ curve"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/02.jpg",
+       "name": "SCENE_33The Sickle River — OriginsSCD mutation + genotypes + dual pathway"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/03.jpg",
+       "name": "SCENE_34The Sickle River — CatastrophesAcute + chronic SCD complications"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/04.jpg",
+       "name": "SCENE_35The Sickle ArmoryTreatment ladder + gene therapy + prevention"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/05.jpg",
+       "name": "SCENE_36The Thalassemia Crucibleβ-thal pathophysiology + management"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/06.jpg",
+       "name": "SCENE_37The Alpha Ladder & Variant Galleryα-thal spectrum + HbC:E:affinity:unstable:M Hb"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemoglobin/07.jpg",
+       "name": "SCENE_38The Cyanosis CourtroomCOHb + MetHb + SulfHb + board traps"
+      }
+     ]
+    },
+    {
+     "name": "anemia / hemolytic",
+     "slug": "anemia-hemolytic",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/01.jpg",
+       "name": "44"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/02.jpg",
+       "name": "G6Pd"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/03.jpg",
+       "name": "aIHA"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/04.jpg",
+       "name": "membrane"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/05.jpg",
+       "name": "pnh"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/06.jpg",
+       "name": "rest of aquired + approach"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/07.jpg",
+       "name": "rest of enzymes"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-hemolytic/08.jpg",
+       "name": "spherocytosis"
+      }
+     ]
+    },
+    {
+     "name": "anemia / iron & micro",
+     "slug": "anemia-iron-micro",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-iron-micro/01.jpg",
+       "name": "Gemini_Generated_Image_63orj663orj663or"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-iron-micro/02.jpg",
+       "name": "Gemini_Generated_Image_9tz8b99tz8b99tz8"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-iron-micro/03.jpg",
+       "name": "Gemini_Generated_Image_ll8bball8bball8b"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-iron-micro/04.jpg",
+       "name": "Gemini_Generated_Image_soqgg3soqgg3soqg"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-iron-micro/05.jpg",
+       "name": "Gemini_Generated_Image_vr5jjpvr5jjpvr5j"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-iron-micro/06.jpg",
+       "name": "Gemini_Generated_Image_w864nuw864nuw864"
+      }
+     ]
+    },
+    {
+     "name": "anemia / megaloblas-updste the photos(made already)",
+     "slug": "anemia-megaloblas-updste-the-photos-made-already",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/01.jpg",
+       "name": "40"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/02.jpg",
+       "name": "41"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/03.jpg",
+       "name": "Dx & tx"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/04.jpg",
+       "name": "PA"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/05.jpg",
+       "name": "Scene 39"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/06.jpg",
+       "name": "Scene 43"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/07.jpg",
+       "name": "b12 causes"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/08.jpg",
+       "name": "clinical features"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/09.jpg",
+       "name": "dx"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/10.jpg",
+       "name": "last"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-megaloblas-updste-the-photos-made-already/11.jpg",
+       "name": "tx"
+      }
+     ]
+    },
+    {
+     "name": "anemia / polycythemia",
+     "slug": "anemia-polycythemia",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/01.jpg",
+       "name": "54"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/02.jpg",
+       "name": "55"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/03.jpg",
+       "name": "56"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/04.jpg",
+       "name": "57"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/05.jpg",
+       "name": "58"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/06.jpg",
+       "name": "59"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/07.jpg",
+       "name": "60"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/08.jpg",
+       "name": "61"
+      },
+      {
+       "file": "img/hemato-oncology/anemia-polycythemia/09.jpg",
+       "name": "62"
+      }
+     ]
+    },
+    {
+     "name": "antiplatelet drugs- final",
+     "slug": "antiplatelet-drugs-final",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/01.jpg",
+       "name": "IMG_0655"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/02.jpg",
+       "name": "IMG_0657"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/03.jpg",
+       "name": "IMG_0658"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/04.jpg",
+       "name": "IMG_0659"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/05.jpg",
+       "name": "IMG_0660"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/06.jpg",
+       "name": "IMG_0661"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/07.jpg",
+       "name": "IMG_0662"
+      },
+      {
+       "file": "img/hemato-oncology/antiplatelet-drugs-final/08.jpg",
+       "name": "IMG_0663"
+      }
+     ]
+    },
+    {
+     "name": "cll",
+     "slug": "cll",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/cll/01.jpg",
+       "name": "cll1"
+      },
+      {
+       "file": "img/hemato-oncology/cll/02.jpg",
+       "name": "cll2"
+      },
+      {
+       "file": "img/hemato-oncology/cll/03.jpg",
+       "name": "mnengitis 3"
+      },
+      {
+       "file": "img/hemato-oncology/cll/04.jpg",
+       "name": "mnengitis 4"
+      }
+     ]
+    },
+    {
+     "name": "coagulation disorders",
+     "slug": "coagulation-disorders",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/01.jpg",
+       "name": "aquired inhibitors pf coag factors"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/02.jpg",
+       "name": "coag disorder vit k def 2"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/03.jpg",
+       "name": "coagulation disorder overview - coagulation cascade"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/04.jpg",
+       "name": "coagulation disorder vit k def"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/05.jpg",
+       "name": "dic 1"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/06.jpg",
+       "name": "dic 2"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/07.jpg",
+       "name": "hemophilia 1"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/08.jpg",
+       "name": "hemophilia 2"
+      },
+      {
+       "file": "img/hemato-oncology/coagulation-disorders/09.jpg",
+       "name": "liver coagulopathy"
+      }
+     ]
+    },
+    {
+     "name": "doac",
+     "slug": "doac",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/doac/01.jpg",
+       "name": "IMG_0680"
+      },
+      {
+       "file": "img/hemato-oncology/doac/02.jpg",
+       "name": "IMG_0681"
+      },
+      {
+       "file": "img/hemato-oncology/doac/03.jpg",
+       "name": "IMG_0682"
+      }
+     ]
+    },
+    {
+     "name": "hymolitic anemia",
+     "slug": "hymolitic-anemia",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/01.jpg",
+       "name": "5"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/02.jpg",
+       "name": "6"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/03.jpg",
+       "name": "7"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/04.jpg",
+       "name": "Scene 1 — The Classification Crossroads"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/05.jpg",
+       "name": "Scene 2 — The Red Cell Factory Floor"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/06.jpg",
+       "name": "Scene 3 — Membrane Architecture Workshop"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/07.jpg",
+       "name": "Scene 4 — G6PD Underground Laboratory"
+      },
+      {
+       "file": "img/hemato-oncology/hymolitic-anemia/08.jpg",
+       "name": "drugs"
+      }
+     ]
+    },
+    {
+     "name": "parentrial anticoag",
+     "slug": "parentrial-anticoag",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/parentrial-anticoag/01.jpg",
+       "name": "DTIs (River Intruders — Argatroban vs Bivalirudin)"
+      },
+      {
+       "file": "img/hemato-oncology/parentrial-anticoag/02.jpg",
+       "name": "IMG_0667"
+      },
+      {
+       "file": "img/hemato-oncology/parentrial-anticoag/03.jpg",
+       "name": "IMG_0668"
+      }
+     ]
+    },
+    {
+     "name": "platelet disorder",
+     "slug": "platelet-disorder",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/platelet-disorder/01.jpg",
+       "name": "ITP 1"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/02.jpg",
+       "name": "ITP tx 2"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/03.jpg",
+       "name": "TTP 1"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/04.jpg",
+       "name": "TTP tx 2"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/05.jpg",
+       "name": "VWD"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/06.jpg",
+       "name": "VWD tx"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/07.jpg",
+       "name": "antiplt - thrombocytopenia approach"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/08.jpg",
+       "name": "drug induced thrombocytopenia & HIT 1"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/09.jpg",
+       "name": "drug induced thrombocytopenia & HIT 2"
+      },
+      {
+       "file": "img/hemato-oncology/platelet-disorder/10.jpg",
+       "name": "platelet disorder HUS"
+      }
+     ]
+    },
+    {
+     "name": "warfarin",
+     "slug": "warfarin",
+     "scenes": [
+      {
+       "file": "img/hemato-oncology/warfarin/01.jpg",
+       "name": "warfarin 1"
+      },
+      {
+       "file": "img/hemato-oncology/warfarin/02.jpg",
+       "name": "warfarin INR TX"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "infection",
+   "name": "Infection",
+   "icon": "🦠",
+   "count": 23,
+   "topics": [
+    {
+     "name": "General",
+     "slug": "general",
+     "scenes": [
+      {
+       "file": "img/infection/general/01.jpg",
+       "name": "infection"
+      }
+     ]
+    },
+    {
+     "name": "HIV",
+     "slug": "hiv",
+     "scenes": [
+      {
+       "file": "img/infection/hiv/01.jpg",
+       "name": "HIV 1"
+      },
+      {
+       "file": "img/infection/hiv/02.jpg",
+       "name": "HIV 2"
+      },
+      {
+       "file": "img/infection/hiv/03.jpg",
+       "name": "hiv3"
+      },
+      {
+       "file": "img/infection/hiv/04.jpg",
+       "name": "hiv4"
+      }
+     ]
+    },
+    {
+     "name": "infective endocarditis",
+     "slug": "infective-endocarditis",
+     "scenes": [
+      {
+       "file": "img/infection/infective-endocarditis/01.jpg",
+       "name": ".1"
+      },
+      {
+       "file": "img/infection/infective-endocarditis/02.jpg",
+       "name": ".2"
+      },
+      {
+       "file": "img/infection/infective-endocarditis/03.jpg",
+       "name": ".3"
+      }
+     ]
+    },
+    {
+     "name": "mnengitis",
+     "slug": "mnengitis",
+     "scenes": [
+      {
+       "file": "img/infection/mnengitis/01.jpg",
+       "name": "mnengitis 1"
+      },
+      {
+       "file": "img/infection/mnengitis/02.jpg",
+       "name": "mnengitis 2"
+      },
+      {
+       "file": "img/infection/mnengitis/03.jpg",
+       "name": "mnengitis 3"
+      },
+      {
+       "file": "img/infection/mnengitis/04.jpg",
+       "name": "mnengitis 4"
+      }
+     ]
+    },
+    {
+     "name": "pneumoia + lung abcess",
+     "slug": "pneumoia-lung-abcess",
+     "scenes": [
+      {
+       "file": "img/infection/pneumoia-lung-abcess/01.jpg",
+       "name": ".3"
+      },
+      {
+       "file": "img/infection/pneumoia-lung-abcess/02.jpg",
+       "name": ".4"
+      },
+      {
+       "file": "img/infection/pneumoia-lung-abcess/03.jpg",
+       "name": ".5"
+      },
+      {
+       "file": "img/infection/pneumoia-lung-abcess/04.jpg",
+       "name": ".6"
+      },
+      {
+       "file": "img/infection/pneumoia-lung-abcess/05.jpg",
+       "name": ".7"
+      }
+     ]
+    },
+    {
+     "name": "pneumonia",
+     "slug": "pneumonia",
+     "scenes": [
+      {
+       "file": "img/infection/pneumonia/01.jpg",
+       "name": "pnemonia 4"
+      },
+      {
+       "file": "img/infection/pneumonia/02.jpg",
+       "name": "pneumonia 1"
+      },
+      {
+       "file": "img/infection/pneumonia/03.jpg",
+       "name": "pneumonia 2"
+      },
+      {
+       "file": "img/infection/pneumonia/04.jpg",
+       "name": "pneumonia 3"
+      }
+     ]
+    },
+    {
+     "name": "UTI",
+     "slug": "uti",
+     "scenes": [
+      {
+       "file": "img/infection/uti/01.jpg",
+       "name": "UTI 1"
+      },
+      {
+       "file": "img/infection/uti/02.jpg",
+       "name": "UTI 2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nephrology",
+   "name": "Nephrology",
+   "icon": "🚽",
+   "count": 56,
+   "topics": [
+    {
+     "name": "General",
+     "slug": "general",
+     "scenes": [
+      {
+       "file": "img/nephrology/general/01.jpg",
+       "name": "AKI Dx steps"
+      },
+      {
+       "file": "img/nephrology/general/02.jpg",
+       "name": "AKI algorithm harrison"
+      },
+      {
+       "file": "img/nephrology/general/03.jpg",
+       "name": "AKI causes table labs clinical features"
+      },
+      {
+       "file": "img/nephrology/general/04.jpg",
+       "name": "AKI pattern table"
+      },
+      {
+       "file": "img/nephrology/general/05.jpg",
+       "name": "FENA"
+      },
+      {
+       "file": "img/nephrology/general/06.jpg",
+       "name": "GFR estmation formuls"
+      },
+      {
+       "file": "img/nephrology/general/07.jpg",
+       "name": "SEDM"
+      },
+      {
+       "file": "img/nephrology/general/08.jpg",
+       "name": "SGLT-2 mechanism in kidney protection"
+      },
+      {
+       "file": "img/nephrology/general/09.jpg",
+       "name": "Screenshot 2026-05-31 at 18.02.32"
+      },
+      {
+       "file": "img/nephrology/general/10.jpg",
+       "name": "bun:crt"
+      },
+      {
+       "file": "img/nephrology/general/11.jpg",
+       "name": "fluid types"
+      },
+      {
+       "file": "img/nephrology/general/12.jpg",
+       "name": "intrensic aki by comparmtent clues"
+      },
+      {
+       "file": "img/nephrology/general/13.jpg",
+       "name": "intrensic failure figure harrison"
+      },
+      {
+       "file": "img/nephrology/general/14.jpg",
+       "name": "low FENa exceptions"
+      },
+      {
+       "file": "img/nephrology/general/15.jpg",
+       "name": "microscope:dipstick RBS"
+      },
+      {
+       "file": "img/nephrology/general/16.jpg",
+       "name": "polyurea ddx with without AKI"
+      },
+      {
+       "file": "img/nephrology/general/17.jpg",
+       "name": "polyuria in AKI"
+      },
+      {
+       "file": "img/nephrology/general/18.jpg",
+       "name": "urine sediment cheat sheet"
+      }
+     ]
+    },
+    {
+     "name": "acid base",
+     "slug": "acid-base",
+     "scenes": [
+      {
+       "file": "img/nephrology/acid-base/01.jpg",
+       "name": "acid base 0"
+      },
+      {
+       "file": "img/nephrology/acid-base/02.jpg",
+       "name": "acids base reading"
+      },
+      {
+       "file": "img/nephrology/acid-base/03.jpg",
+       "name": "compensation"
+      }
+     ]
+    },
+    {
+     "name": "azotemia",
+     "slug": "azotemia",
+     "scenes": [
+      {
+       "file": "img/nephrology/azotemia/01.jpg",
+       "name": "azotemia GFR"
+      },
+      {
+       "file": "img/nephrology/azotemia/02.jpg",
+       "name": "hematouria approach"
+      },
+      {
+       "file": "img/nephrology/azotemia/03.jpg",
+       "name": "polyurea approach"
+      },
+      {
+       "file": "img/nephrology/azotemia/04.jpg",
+       "name": "protienuria approach"
+      }
+     ]
+    },
+    {
+     "name": "calcium",
+     "slug": "calcium",
+     "scenes": [
+      {
+       "file": "img/nephrology/calcium/01.jpg",
+       "name": "calcium algorithm"
+      },
+      {
+       "file": "img/nephrology/calcium/02.jpg",
+       "name": "calcium drugs"
+      },
+      {
+       "file": "img/nephrology/calcium/03.jpg",
+       "name": "calcium rare causes"
+      },
+      {
+       "file": "img/nephrology/calcium/04.jpg",
+       "name": "hypercalcemia"
+      },
+      {
+       "file": "img/nephrology/calcium/05.jpg",
+       "name": "hypocalcemia"
+      }
+     ]
+    },
+    {
+     "name": "glomerular disease",
+     "slug": "glomerular-disease",
+     "scenes": [
+      {
+       "file": "img/nephrology/glomerular-disease/01.jpg",
+       "name": "nephrotic Diabetic Nephropathy_ Pathology & Natural History"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/02.jpg",
+       "name": "nephrotic Glomerular Deposition Diseases"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/03.jpg",
+       "name": "nephrotic HIVAN"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/04.jpg",
+       "name": "nephrotic basement membrane syndrome - alport thin BM nail-patella"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/05.jpg",
+       "name": "nephrotic cholestrol emboli nephropathy"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/06.jpg",
+       "name": "nephrotic diabetic nephropathy *"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/07.jpg",
+       "name": "nephrotic focal segmental"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/08.jpg",
+       "name": "nephrotic infection nephropathy"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/09.jpg",
+       "name": "nephrotic membranous nephroptathy"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/10.jpg",
+       "name": "nephrotic minimal change disease"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/11.jpg",
+       "name": "nephrotic scikle cell nephropathy"
+      },
+      {
+       "file": "img/nephrology/glomerular-disease/12.jpg",
+       "name": "nephrotic syndrome Fabry's"
+      }
+     ]
+    },
+    {
+     "name": "kidney transplant",
+     "slug": "kidney-transplant",
+     "scenes": [
+      {
+       "file": "img/nephrology/kidney-transplant/01.jpg",
+       "name": "CMV 1"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/02.jpg",
+       "name": "CMV2"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/03.jpg",
+       "name": "post-transplant"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/04.jpg",
+       "name": "transplant CI"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/05.jpg",
+       "name": "transplant complication"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/06.jpg",
+       "name": "transplant manegment 1"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/07.jpg",
+       "name": "transplant manegment 2"
+      },
+      {
+       "file": "img/nephrology/kidney-transplant/08.jpg",
+       "name": "transplant rejection"
+      }
+     ]
+    },
+    {
+     "name": "TID Tubulointerstitial Diseases-TIN",
+     "slug": "tid-tubulointerstitial-diseases-tin",
+     "scenes": [
+      {
+       "file": "img/nephrology/tid-tubulointerstitial-diseases-tin/01.jpg",
+       "name": "Allergic AIN - drugs"
+      },
+      {
+       "file": "img/nephrology/tid-tubulointerstitial-diseases-tin/02.jpg",
+       "name": "Autoimmune AIN Gallery"
+      },
+      {
+       "file": "img/nephrology/tid-tubulointerstitial-diseases-tin/03.jpg",
+       "name": "TID tubulointerstitial overview"
+      },
+      {
+       "file": "img/nephrology/tid-tubulointerstitial-diseases-tin/04.jpg",
+       "name": "TID tubulointerstitial crystals and casts"
+      },
+      {
+       "file": "img/nephrology/tid-tubulointerstitial-diseases-tin/05.jpg",
+       "name": "TID tubulointerstitial structural metabolic CIN"
+      },
+      {
+       "file": "img/nephrology/tid-tubulointerstitial-diseases-tin/06.jpg",
+       "name": "TID tubulointerstitial - Toxin chronic CIN"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oncology",
+   "name": "Oncology",
+   "icon": "📚",
+   "count": 37,
+   "topics": [
+    {
+     "name": "oncology / AML",
+     "slug": "oncology-aml",
+     "scenes": [
+      {
+       "file": "img/oncology/oncology-aml/01.jpg",
+       "name": "Gemini_Generated_Image_ev8xh4ev8xh4ev8x"
+      },
+      {
+       "file": "img/oncology/oncology-aml/02.jpg",
+       "name": "Gemini_Generated_Image_gmxld0gmxld0gmxl"
+      },
+      {
+       "file": "img/oncology/oncology-aml/03.jpg",
+       "name": "Gemini_Generated_Image_jv0c8hjv0c8hjv0c"
+      },
+      {
+       "file": "img/oncology/oncology-aml/04.jpg",
+       "name": "Gemini_Generated_Image_n1rmx0n1rmx0n1rm"
+      },
+      {
+       "file": "img/oncology/oncology-aml/05.jpg",
+       "name": "Gemini_Generated_Image_nutyavnutyavnuty"
+      },
+      {
+       "file": "img/oncology/oncology-aml/06.jpg",
+       "name": "Gemini_Generated_Image_ockznjockznjockz"
+      },
+      {
+       "file": "img/oncology/oncology-aml/07.jpg",
+       "name": "Gemini_Generated_Image_qrrs5wqrrs5wqrrs"
+      },
+      {
+       "file": "img/oncology/oncology-aml/08.jpg",
+       "name": "Gemini_Generated_Image_wt3fqfwt3fqfwt3f"
+      }
+     ]
+    },
+    {
+     "name": "oncology / cll",
+     "slug": "oncology-cll",
+     "scenes": [
+      {
+       "file": "img/oncology/oncology-cll/01.jpg",
+       "name": "52"
+      },
+      {
+       "file": "img/oncology/oncology-cll/02.jpg",
+       "name": "53"
+      },
+      {
+       "file": "img/oncology/oncology-cll/03.jpg",
+       "name": "54"
+      },
+      {
+       "file": "img/oncology/oncology-cll/04.jpg",
+       "name": "55"
+      },
+      {
+       "file": "img/oncology/oncology-cll/05.jpg",
+       "name": "56"
+      }
+     ]
+    },
+    {
+     "name": "oncology / CML",
+     "slug": "oncology-cml",
+     "scenes": [
+      {
+       "file": "img/oncology/oncology-cml/01.jpg",
+       "name": "47"
+      },
+      {
+       "file": "img/oncology/oncology-cml/02.jpg",
+       "name": "48"
+      },
+      {
+       "file": "img/oncology/oncology-cml/03.jpg",
+       "name": "49"
+      },
+      {
+       "file": "img/oncology/oncology-cml/04.jpg",
+       "name": "50"
+      },
+      {
+       "file": "img/oncology/oncology-cml/05.jpg",
+       "name": "51"
+      }
+     ]
+    },
+    {
+     "name": "oncology / NHL",
+     "slug": "oncology-nhl",
+     "scenes": [
+      {
+       "file": "img/oncology/oncology-nhl/01.jpg",
+       "name": "NHL Registry (census bureau)"
+      },
+      {
+       "file": "img/oncology/oncology-nhl/02.jpg",
+       "name": "Translocation Vault (bank vault)"
+      },
+      {
+       "file": "img/oncology/oncology-nhl/03.jpg",
+       "name": "Burkitt's Express (railway station)"
+      },
+      {
+       "file": "img/oncology/oncology-nhl/04.jpg",
+       "name": "Indolent Garden (botanical garden)"
+      },
+      {
+       "file": "img/oncology/oncology-nhl/05.jpg",
+       "name": "Mantle Cell Forge (blacksmith forge)"
+      },
+      {
+       "file": "img/oncology/oncology-nhl/06.jpg",
+       "name": "T-Cell Underground (subway system"
+      },
+      {
+       "file": "img/oncology/oncology-nhl/07.jpg",
+       "name": "NHL Arsenal (armory)"
+      }
+     ]
+    },
+    {
+     "name": "oncology / plasma cell",
+     "slug": "oncology-plasma-cell",
+     "scenes": [
+      {
+       "file": "img/oncology/oncology-plasma-cell/01.jpg",
+       "name": "1"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/02.jpg",
+       "name": "10"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/03.jpg",
+       "name": "11"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/04.jpg",
+       "name": "12"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/05.jpg",
+       "name": "2"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/06.jpg",
+       "name": "3"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/07.jpg",
+       "name": "4"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/08.jpg",
+       "name": "5"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/09.jpg",
+       "name": "6"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/10.jpg",
+       "name": "7"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/11.jpg",
+       "name": "8"
+      },
+      {
+       "file": "img/oncology/oncology-plasma-cell/12.jpg",
+       "name": "9"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "respiratory",
+   "name": "Respiratory",
+   "icon": "📚",
+   "count": 39,
+   "topics": [
+    {
+     "name": "General",
+     "slug": "general",
+     "scenes": [
+      {
+       "file": "img/respiratory/general/01.jpg",
+       "name": "respiratory"
+      }
+     ]
+    },
+    {
+     "name": "asthma",
+     "slug": "asthma",
+     "scenes": [
+      {
+       "file": "img/respiratory/asthma/01.jpg",
+       "name": "ASTHMA DIAGNOSIS SCENE v2 — The Asthma Diagnostic Stadium (REBUILD)"
+      },
+      {
+       "file": "img/respiratory/asthma/02.jpg",
+       "name": "ASTHMA SCENE 1 — The Asthma Airway Siege Topic: The 3 core features of asthma (obstruction + AHR + inflammation), acute vs chronic obstruction mechanisms, airway remodeling,"
+      },
+      {
+       "file": "img/respiratory/asthma/03.jpg",
+       "name": "ASTHMA SCENE 2 — The Type 2 Cytokine Court & Biologic Knights Topic: Type 2 inflammation pathways"
+      },
+      {
+       "file": "img/respiratory/asthma/04.jpg",
+       "name": "ASTHMA TREATMENT SCENE 1 — The Asthma Drug Armory Topic: All major asthma drug classes"
+      },
+      {
+       "file": "img/respiratory/asthma/05.jpg",
+       "name": "ASTHMA TREATMENT SCENE 2 — The Asthma Step Ladder"
+      },
+      {
+       "file": "img/respiratory/asthma/06.jpg",
+       "name": "ASTHMA TREATMENT SCENE 3 v2 — The Asthma ER & Special Populations Ward"
+      },
+      {
+       "file": "img/respiratory/asthma/07.jpg",
+       "name": "ashtma 2"
+      },
+      {
+       "file": "img/respiratory/asthma/08.jpg",
+       "name": "asthma 1"
+      },
+      {
+       "file": "img/respiratory/asthma/09.jpg",
+       "name": "asthma 3"
+      },
+      {
+       "file": "img/respiratory/asthma/10.jpg",
+       "name": "asthma 4"
+      },
+      {
+       "file": "img/respiratory/asthma/11.jpg",
+       "name": "asthma 5"
+      }
+     ]
+    },
+    {
+     "name": "broncheectasis",
+     "slug": "broncheectasis",
+     "scenes": [
+      {
+       "file": "img/respiratory/broncheectasis/01.jpg",
+       "name": "bronchectasis 1"
+      },
+      {
+       "file": "img/respiratory/broncheectasis/02.jpg",
+       "name": "bronchectsais 2"
+      },
+      {
+       "file": "img/respiratory/broncheectasis/03.jpg",
+       "name": "bronchectsais 3"
+      }
+     ]
+    },
+    {
+     "name": "copd",
+     "slug": "copd",
+     "scenes": [
+      {
+       "file": "img/respiratory/copd/01.jpg",
+       "name": "copd 2"
+      },
+      {
+       "file": "img/respiratory/copd/02.jpg",
+       "name": "copd 3"
+      },
+      {
+       "file": "img/respiratory/copd/03.jpg",
+       "name": "copd1"
+      }
+     ]
+    },
+    {
+     "name": "hypersens pneumonitis",
+     "slug": "hypersens-pneumonitis",
+     "scenes": [
+      {
+       "file": "img/respiratory/hypersens-pneumonitis/01.jpg",
+       "name": "pneumonitis 1"
+      },
+      {
+       "file": "img/respiratory/hypersens-pneumonitis/02.jpg",
+       "name": "pneumonitis 2"
+      },
+      {
+       "file": "img/respiratory/hypersens-pneumonitis/03.jpg",
+       "name": "pneumonitis 3"
+      },
+      {
+       "file": "img/respiratory/hypersens-pneumonitis/04.jpg",
+       "name": "pneumonitis 4"
+      }
+     ]
+    },
+    {
+     "name": "ILD",
+     "slug": "ild",
+     "scenes": [
+      {
+       "file": "img/respiratory/ild/01.jpg",
+       "name": "ILD 1"
+      },
+      {
+       "file": "img/respiratory/ild/02.jpg",
+       "name": "ILD 2"
+      },
+      {
+       "file": "img/respiratory/ild/03.jpg",
+       "name": "ILD 3"
+      }
+     ]
+    },
+    {
+     "name": "pleural disease",
+     "slug": "pleural-disease",
+     "scenes": [
+      {
+       "file": "img/respiratory/pleural-disease/01.jpg",
+       "name": "pleural disease 1"
+      },
+      {
+       "file": "img/respiratory/pleural-disease/02.jpg",
+       "name": "pleural disease 2"
+      },
+      {
+       "file": "img/respiratory/pleural-disease/03.jpg",
+       "name": "pleural disease 3"
+      }
+     ]
+    },
+    {
+     "name": "pulmonary hypertension",
+     "slug": "pulmonary-hypertension",
+     "scenes": [
+      {
+       "file": "img/respiratory/pulmonary-hypertension/01.jpg",
+       "name": "oulhtn 2"
+      },
+      {
+       "file": "img/respiratory/pulmonary-hypertension/02.jpg",
+       "name": "pulmhtn 1"
+      },
+      {
+       "file": "img/respiratory/pulmonary-hypertension/03.jpg",
+       "name": "pulmhtn 3"
+      }
+     ]
+    },
+    {
+     "name": "resp desturb",
+     "slug": "resp-desturb",
+     "scenes": [
+      {
+       "file": "img/respiratory/resp-desturb/01.jpg",
+       "name": "desturbance 1"
+      },
+      {
+       "file": "img/respiratory/resp-desturb/02.jpg",
+       "name": "desturbance 2"
+      },
+      {
+       "file": "img/respiratory/resp-desturb/03.jpg",
+       "name": "desturbance 3"
+      }
+     ]
+    },
+    {
+     "name": "resp dx",
+     "slug": "resp-dx",
+     "scenes": [
+      {
+       "file": "img/respiratory/resp-dx/01.jpg",
+       "name": "SCENE 1 — The Hypoxemia Interrogation Room Topic: The 5 mechanisms of hypoxemia, A–a gradient, response to oxygen, V:Q extremes (dead space vs shunt)"
+      },
+      {
+       "file": "img/respiratory/resp-dx/02.jpg",
+       "name": "SCENE 2 — The PFT Workshop Topic: Lung volumes (RV:FRC:TLC trap), compliance & recoil, FEV₁:FVC interpretation algorithm, obstructive vs restrictive patterns, pseudo-restriction"
+      },
+      {
+       "file": "img/respiratory/resp-dx/03.jpg",
+       "name": "SCENE 3 — The DLCO Bazaar & Flow-Volume Gallery Topic: DLCO (high:low causes), disease pattern recognition (emphysema, fibrosis, neuromuscular, obesity, asthma), flow-volume loop shapes (upper airway obstruction types)"
+      }
+     ]
+    },
+    {
+     "name": "sleep apnea",
+     "slug": "sleep-apnea",
+     "scenes": [
+      {
+       "file": "img/respiratory/sleep-apnea/01.jpg",
+       "name": "apnea 2"
+      },
+      {
+       "file": "img/respiratory/sleep-apnea/02.jpg",
+       "name": "sleep apnea 1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rheumoatology",
+   "name": "Rheumoatology",
+   "icon": "🍖",
+   "count": 1,
+   "topics": [
+    {
+     "name": "arthritis",
+     "slug": "arthritis",
+     "scenes": [
+      {
+       "file": "img/rheumoatology/arthritis/01.jpg",
+       "name": "arthritis"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "total": 456
+}
