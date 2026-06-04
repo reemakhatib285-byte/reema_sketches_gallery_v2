@@ -1656,7 +1656,7 @@
    "id": "hepatology",
    "name": "Hepatology",
    "icon": "🫀",
-   "count": 20,
+   "count": 23,
    "topics": [
     {
      "name": "ALD",
@@ -1687,6 +1687,18 @@
       {
        "file": "img/hepatology/approach/03.jpg",
        "name": "Harbor Dock"
+      },
+      {
+       "file": "img/hepatology/approach/04.jpg",
+       "name": "Transplant Court"
+      },
+      {
+       "file": "img/hepatology/approach/05.jpg",
+       "name": "Mechanic's Workshop"
+      },
+      {
+       "file": "img/hepatology/approach/06.jpg",
+       "name": "Left Lab Bench"
       }
      ]
     },
@@ -3119,5 +3131,5 @@
    ]
   }
  ],
- "total": 602
+ "total": 605
 }
