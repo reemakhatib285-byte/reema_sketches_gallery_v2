@@ -2604,7 +2604,7 @@
    "id": "respiratory",
    "name": "Respiratory",
    "icon": "🫁",
-   "count": 42,
+   "count": 43,
    "topics": [
     {
      "name": "General",
@@ -2711,6 +2711,10 @@
       {
        "file": "img/respiratory/copd/03.jpg",
        "name": "copd1"
+      },
+      {
+       "file": "img/respiratory/copd/04.jpg",
+       "name": "COPD (Sketchy Pharma)"
       }
      ]
     },
@@ -3143,5 +3147,5 @@
    ]
   }
  ],
- "total": 608
+ "total": 609
 }
