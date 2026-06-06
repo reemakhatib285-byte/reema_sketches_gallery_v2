@@ -1786,7 +1786,7 @@
    "id": "infection",
    "name": "Infection",
    "icon": "🦠",
-   "count": 23,
+   "count": 30,
    "topics": [
     {
      "name": "General",
@@ -1919,6 +1919,40 @@
       {
        "file": "img/infection/uti/02.jpg",
        "name": "UTI 2"
+      }
+     ]
+    },
+    {
+     "name": "TB & Mycobacteria",
+     "slug": "tb-mycobacteria",
+     "scenes": [
+      {
+       "file": "img/infection/tb-mycobacteria/01.jpg",
+       "name": "TB Scene 1 — The Granuloma Fortress"
+      },
+      {
+       "file": "img/infection/tb-mycobacteria/02.jpg",
+       "name": "TB Scene 2 — The TB Apothecary"
+      },
+      {
+       "file": "img/infection/tb-mycobacteria/03.jpg",
+       "name": "TB Scene 3 — The Field Hospital (Extrapulmonary TB)"
+      },
+      {
+       "file": "img/infection/tb-mycobacteria/04.jpg",
+       "name": "TB Pharmacotherapy — RIPE"
+      },
+      {
+       "file": "img/infection/tb-mycobacteria/05.jpg",
+       "name": "Mycobacterium tuberculosis — micro"
+      },
+      {
+       "file": "img/infection/tb-mycobacteria/06.jpg",
+       "name": "Mycobacterium Avium & Leprae"
+      },
+      {
+       "file": "img/infection/tb-mycobacteria/07.jpg",
+       "name": "Mycobacterium Leprae"
       }
      ]
     }
@@ -2604,7 +2638,7 @@
    "id": "respiratory",
    "name": "Respiratory",
    "icon": "🫁",
-   "count": 43,
+   "count": 44,
    "topics": [
     {
      "name": "General",
@@ -2715,6 +2749,10 @@
       {
        "file": "img/respiratory/copd/04.jpg",
        "name": "COPD (Sketchy Pharma)"
+      },
+      {
+       "file": "img/respiratory/copd/05.jpg",
+       "name": "COPD (Sketchy Pathology)"
       }
      ]
     },
@@ -3147,5 +3185,5 @@
    ]
   }
  ],
- "total": 609
+ "total": 617
 }
