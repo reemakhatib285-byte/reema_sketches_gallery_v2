@@ -195,7 +195,9 @@ async function init(){
   document.getElementById('totalScenes').textContent = DATA.total || 0;
   document.getElementById('totalSubjects').textContent = (DATA.subjects||[]).length;
   if(DATA.subjects.length) openSubjects.add(DATA.subjects[0].id);
-  render('');
+  const q=new URLSearchParams(location.search).get('q')||'';
+  if(q){ document.getElementById('searchInput').value=q; }
+  render(q);
 }
 
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
